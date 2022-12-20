@@ -1,0 +1,2870 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="slick/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-1.8.1/slick/slick-theme.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="./newassets/assets/css/main.css">
+    <link rel="stylesheet" href="./newassets/assets/css/color-2.css">
+    <link rel="stylesheet" href="./newassets/assets/css/utilities.css">
+    <link rel="stylesheet" href="./newassets/assets/css/swiper.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="newassets/dist/jquery.flipster.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/7d9f70ae09.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="newassets/assets/css/csss.css">
+    <script src="newassets/assets/js/carouselslide.js"></script>
+    <script src="newassets/assets/js/min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <style>
+        .section-4 .box-2 img:nth-child(3):hover {
+            left: -60px;
+        }
+
+        .mySlides {display: none;}
+        img {vertical-align: middle;}
+        
+        /* Slideshow container */
+        .slideshow-container {
+          max-width: 1200px;
+          position: relative;
+          margin: auto;
+        }
+
+        /* Caption text */
+        .text {
+          color: #f2f2f2;
+          font-size: 15px;
+          padding: 8px 12px;
+          position: absolute;
+          bottom: 8px;
+          width: 100%;
+          text-align: center;
+        }
+        
+        /* Number text (1/3 etc) */
+        .numbertext {
+          color: #f2f2f2;
+          font-size: 12px;
+          padding: 8px 12px;
+          position: absolute;
+          top: 0;
+        }
+        
+        /* The dots/bullets/indicators */
+        .dot {
+          height: 15px;
+          width: 15px;
+          margin: 0 2px;
+          background-color: #bbb;
+          border-radius: 50%;
+          display: inline-block;
+          transition: background-color 0.6s ease;
+        }
+
+         .activess {
+          background-color: #717171;
+        } 
+        
+        /* Fading animation */
+        .fade {
+          animation-name: fade;
+          animation-duration: 3.5s;
+        }
+        
+        @keyframes fade {
+          from {opacity: .4} 
+          to {opacity: 1}
+        }
+        
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+          .text {font-size: 11px}
+        }
+        </style>
+
+    <style>
+        .mySlidesss 
+        {
+            display: flex;
+            transition: all;
+            transition-duration: 200ms;
+            flex: 0 0 100%;
+        }
+        .hide2 
+        {
+            display: none;
+        }
+
+        .hide3 
+        {
+            display: none;
+        }
+
+        .bd
+        {
+            width: 90%;
+            margin: auto;
+            height: auto;
+        }
+        
+        .section-19  .desktopbd
+        {
+            width: 103%;
+            margin: auto;
+            height: auto;
+        }
+
+
+        .homeslider 
+        {
+            width: 100%;
+            height: auto;
+        }
+
+        .responsive 
+        {
+            width: 100%;
+            height: auto;
+        }
+
+        .flip,
+        .flip1,
+        .flip2,
+        .flip3,
+        .flip4,
+        .flip5,
+        .flip6,#second,#fl,#cll
+        {
+            cursor: pointer;
+        }
+
+        #panel1,
+        #panel2,
+        #panel3,
+        #panel4,
+        #panel5,
+        #panel6
+        {
+            display: none;
+        }
+
+        .mySlides {
+            display: flex;
+            justify-content: space-around;
+        }
+    </style>
+    <style>
+        .flip,
+        .flip1,
+        .flip2,
+        .flip3,
+        .flip4,
+        .flip5,
+        .flip6 
+        {
+            cursor: pointer;
+        }
+
+        .panel1,
+        .panel2,
+        .panel3,
+        #panel4,
+        #panel5,
+        #panel6 
+        {
+            /* padding: 50px; */
+            display: none;
+        }
+
+        .owl-carousel
+        {
+            max-width:100%;
+            margin: auto;
+         } 
+        .owl-carousel .item
+        {
+            background-color: seagreen;
+            margin: 20px 0px;
+            text-align: center;
+            width: 100%;
+            height: 200px;
+            position: relative;
+        }
+      
+        .carousel .card-2
+        {
+            background-color: rgb(0, 217, 255);
+
+        }
+        .carousel .card-3
+        {
+            background-color: rgb(0, 72, 255);
+
+        }
+        .carousel .card-4
+        {
+            background-color: rgb(255, 162, 0);
+
+        }
+        .carousel .card-5
+        {
+            background-color: rgb(0, 255, 26);
+
+        }
+        .carousel .card-6
+        {
+            background-color: rgb(157, 0, 255);
+
+        }
+        .owl-dots
+        {
+            text-align: center;
+        margin-top: 10px;
+        }
+        .owl-dot
+        {
+            height: 15px;
+            width:45px;
+            margin-left: 10px;
+            border: 2px solid green !important;
+
+        }
+        .owl-dot:hover,
+        .owl-dot:active
+        {
+background-color: yellowgreen !important;
+        }
+        @media screen and (max-width:950px) {
+            .fa-angle-left
+        {
+            position: absolute;
+            left: 40% !important;
+            /* left: 40%; */
+            bottom: 0px;
+            font-size: 20px;
+            font-weight: bold;
+            color:lightgray;
+        }
+        .fa-angle-right
+        {
+            position: absolute;
+            left: 46% !important; 
+            /* left: 50%; */
+            bottom: 0px;
+            font-size: 20px;
+            color:lightgray;
+        }
+        }
+        .fa-angle-left
+        {
+            position: absolute;
+            /* left: 42%; */
+            left: 50%;
+            bottom: 0px;
+            font-size: 20px;
+            font-weight: bold;
+            color:lightgray;
+        }
+        .fa-angle-right
+        {
+            position: absolute;
+            /* left: 54%; */
+            left: 55%;
+            bottom: 0px;
+            font-size: 20px;
+            color:lightgray;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- ======= Header-Start ======= -->
+    <header id="header">
+        <div class="wrapper desktop">
+            <div class="navbar flex">
+                <div class="logo">
+                    <img src="./newassets/assets/img/Artboard 6.png" alt="">
+                </div>
+                <nav>
+                    <ul class="flex">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#" class="active">Online Courses<i class="fa-solid fa-angle-down"></i></a></li>
+                        <li><a href="#">Offline Courses<i class="fa-solid fa-angle-down"></i></a></li>
+                        <li><a href="#">Student Works</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">More<i class="fa-solid fa-angle-down"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="hero-section flex">
+                <div class="box-1">
+                    <div class="title">
+                        <h1>UX U <span>DESIGN</span></h1>
+                        <h2><span>DIPLOMA CERTIFICATION</span> IN UX UI DESIGN</h2>
+                    </div>
+                    <div class="cards">
+                        <div class="card">
+                            <img src="./newassets/assets/img/Icon feather-check copy.png" alt="" srcset="">
+                            <p>7 Years | 2500+ Students Trained</p>
+                        </div>
+                        <div class="card">
+                            <img src="./newassets/assets/img/Icon feather-check copy.png" alt="" srcset="">
+                            <p>Placed at Reputed Companies</p>
+                        </div>
+                        <div class="card">
+                            <img src="./newassets/assets/img/Icon feather-check copy.png" alt="" srcset="">
+                            <p>Expansive Course Coverage</p>
+                        </div>
+                        <div class="card">
+                            <img src="./newassets/assets/img/Icon feather-check copy.png" alt="" srcset="">
+                            <p>Industrial Exposure</p>
+                        </div>
+                        <div class="card">
+                            <img src="./newassets/assets/img/Icon feather-check copy.png" alt="" srcset="">
+                            <p>Unlimited Lab Hours</p>
+                        </div>
+                        <div class="card">
+                            <img src="./newassets/assets/img/Icon feather-check copy.png" alt="" srcset="">
+                            <p>Informative Workshops & Seminars</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-2">
+                    <div class="card flex">
+                        <h2>Got placed @ Applied Materials<br>with <span>7.2 LPA.</span> Thanks to Web D!</h2>
+                        <div class="image">
+                            <img src="./newassets/assets/img/shyam.png" alt="">
+                            <img src="./newassets/assets/img/Layer 1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="card flex">
+                        <div class="image">
+                            <img src="./newassets/assets/img/eva orange.png" alt="">
+                            <img src="./newassets/assets/img/Layer 2.png" alt="">
+                        </div>
+                        <h2>Web D, has been the right choice<br>for <span>my career</span> enhancement</h2>
+                    </div>
+                    <div class="card flex">
+                        <h2>Trainers at Web D are <span>friendly &<br>motivate</span> us to achieve our goal</h2>
+                        <div class="image">
+                            <img src="./newassets/assets/img/amman blue.png" alt="">
+                            <img src="./newassets/assets/img/Layer 3.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="box-3 flex">
+                    <div class="btn">
+                        <a href="#">Enquire Now</a>
+                    </div>
+                    <h1>Start Your <span>Success Story</span> Today...</h1>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="wrapper mobile">
+            <div class="navbar flex">
+                <div class="logo">
+                    <img src="./newassets/assets/img/Artboard 6.png" alt="">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#" class="active">Online Courses<i class="fa-solid fa-angle-down"></i></a></li>
+                        <li><a href="#">Offline Courses<i class="fa-solid fa-angle-down"></i></a></li>
+                        <li><a href="#">Student Works</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">More<i class="fa-solid fa-angle-down"></i></a></li>
+                    </ul>
+                </nav>
+                <div class="hamburger">
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                </div>
+            </div>
+            <div class="hero-section">
+                <div class="title">
+                    <h1>UX U <span>DESIGN</span></h1>
+                    <h2><span>DIPLOMA CERTIFICATION</span><br>IN UX UI DESIGN</h2>
+                </div>
+                <div class="box-2">
+                    <div class="card flex">
+                        <h2>Got placed @ Applied Materials<br> with <span>7.2 LPA.</span> Thanks to Web D!</h2>
+                        <div class="image">
+                            <img src="./newassets/assets/img/shyam.png" alt="">
+                            <img src="./newassets/assets/img/Layer 1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="card flex">
+                        <div class="image">
+                            <img src="./newassets/assets/img/eva orange.png" alt="">
+                            <img src="./newassets/assets/img/Layer 2.png" alt="">
+                        </div>
+                        <h2>Web D, has been the right choice<br> for <span>my career</span> enhancement</h2>
+                    </div>
+                    <div class="card flex">
+                        <h2>Trainers at Web D are <span>friendly &<br> motivate</span> us to achieve our goal</h2>
+                        <div class="image">
+                            <img src="./newassets/assets/img/amman blue.png" alt="">
+                            <img src="./newassets/assets/img/Layer 3.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="box-3">
+                    <h1>Start Your <span>Success Story</span> Today...</h1>
+                    <div class="cards">
+                        <div class="card">
+                            <img src="./newassets/assets/img/Icon feather-check copy.png" alt="" srcset="">
+                            <p>7 Years | 2500+ Students Trained</p>
+                        </div>
+                        <div class="card">
+                            <img src="./newassets/assets/img/Icon feather-check copy.png" alt="" srcset="">
+                            <p>Placed at Reputed Companies</p>
+                        </div>
+                        <div class="card">
+                            <img src="./newassets/assets/img/Icon feather-check copy.png" alt="" srcset="">
+                            <p>Expansive Course Coverage</p>
+                        </div>
+                        <div class="card">
+                            <img src="./newassets/assets/img/Icon feather-check copy.png" alt="" srcset="">
+                            <p>Industrial Exposure</p>
+                        </div>
+                        <div class="card">
+                            <img src="./newassets/assets/img/Icon feather-check copy.png" alt="" srcset="">
+                            <p>Unlimited Lab Hours</p>
+                        </div>
+                        <div class="card">
+                            <img src="./newassets/assets/img/Icon feather-check copy.png" alt="" srcset="">
+                            <p>Informative Workshops & Seminars</p>
+                        </div>
+                    </div>
+                    <div class="btn">
+                        <a href="#">Enquire Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ======= Header-End ======= -->
+
+    <!-- ======= Main-Start ======= -->
+    <main>
+        <!-- Section:1[3 Cards]-Start -->
+        <section class="section-1">
+            <div class="bg">
+                <div class="wrapper">
+                    <div class="cards flex">
+                        <div class="card flex">
+                            <h1>7+</h1>
+                            <p>Years of<br><span>Excellence</span></p>
+                        </div>
+                        <div class="card flex">
+                            <h1>2500+</h1>
+                            <p>Students<br><span>Trained</span></p>
+                        </div>
+                        <div class="card flex">
+                            <h1>100%</h1>
+                            <p>Placement<br><span>Record</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section:1-End -->
+
+        <!-- Section:2[Key Features]-Start -->
+        <section class="section-2">
+            <div class="wrapper">
+                <div class="title">
+                    <h1><span>Key</span> Features</h1>
+                </div>
+                <div class="cards">
+                    <div class="card card-1">
+                        <div class="image">
+                            <img src="./newassets/assets/img/1.png" alt="">
+                        </div>
+                        <div class="content-3">
+                            <h3>5 Months Duration</h3>
+                        </div>
+                    </div>
+                    <div class="card card-2">
+                        <div class="image">
+                            <img src="./newassets/assets/img/2.png" alt="">
+                        </div>
+                        <div class="content-3">
+                            <h3>90 hours live Sessions</h3>
+                        </div>
+                    </div>
+                    <div class="card card-3">
+                        <div class="image">
+                            <img src="./newassets/assets/img/3.png" alt="">
+                        </div>
+                        <div class="content-3">
+                            <h3>60 Sessions</h3>
+                        </div>
+                    </div>
+                    <div class="card card-4">
+                        <div class="image">
+                            <img src="./newassets/assets/img/4.png" alt="">
+                        </div>
+                        <div class="content-3">
+                            <h3>Flexible Schedule</h3>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="card card-5">
+                        <div class="image">
+                            <img src="./newassets/assets/img/5.png" alt="">
+                        </div>
+                        <div class="content-3">
+                            <h3>Mentor Support</h3>
+                        </div>
+                    </div>
+                    <div class="card card-6">
+                        <div class="image">
+                            <img src="./newassets/assets/img/6.png" alt="">
+                        </div>
+                        <div class="content-3">
+                            <h3>100% Job Assistance</h3>
+                        </div>
+                    </div>
+                    <div class="card card-7">
+                        <div class="image">
+                            <img src="./newassets/assets/img/7.png" alt="">
+                        </div>
+                        <div class="content-3">
+                            <h3>Unlimited Lab Hours</h3>
+                        </div>
+                    </div>
+                    <div class="card card-8">
+                        <div class="image">
+                            <img src="./newassets/assets/img/8.png" alt="">
+                        </div>
+                        <div class="content-3">
+                            <h3>Certification</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section:2-End -->
+
+        <!-- Section:3[Getting Started]-Start -->
+        <section class="section-3">
+            <div class="wrapper">
+                <div class="title">
+                    <h1>Getting Started...<br>Why Should You Learn <span>UX UI Design!</span></h1>
+                </div>
+                <div class="cards flex">
+                    <div class="box-1">
+                        <p>UX Design refers to the term User Experience Design, while UI Design stands for User
+                            Interface Design & both these components are extremely crucial to any website or app. UI UX
+                            professionals are responsible for the best possible ‘look & feel’ as well as the smooth
+                            functionalities of a site. UI UX Designer / Developer is the one of the hottest careers in
+                            India, as the companies have now realized its importance.</p>
+                        <p>We are all dependant on a lot mobile apps & web apps today to live a comfortable life. UX UI
+                            Design is arguably the backbone of these apps. Yes, all the mobile apps, games, OTT movie
+                            platforms, Ecommerce sites etc are created on the foundation built by UX UI Designers
+                            only.So, the demand for UX UI designers is very high today, with many companies willing to
+                            employ fresh candidates with good knowledge in UX UI design.</p>
+                        <div class="btn sec-3">
+                            <a href="#">Learn More<img src="./newassets/assets/img/Icon ionic-ios-arrow-round-forward.png"
+                                    alt=""></a>
+                        </div>
+                    </div>
+                    <div class="box-2">
+                        <iframe width="100%" src="https://www.youtube.com/embed/gZGkD5pCRIY"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section:3-End -->
+
+        <!-- Section:4[User Experience]-Start -->
+        <section class="section-4">
+            <div class="wrapper">
+                <div class="title">
+                    <h1>Get to know... The term <span>User Experience</span> Design<br>&<br>the <span>roles of UX
+                            Designer</span></h1>
+                </div>
+                <div class="cards flex">
+                    <div class="box-2 flex">
+                        <div class="small-box">
+                            <img src="./newassets/assets/img/Mask Group 10.png" alt="">
+                            <img src="./newassets/assets/img/Mask Group 11.png" alt="">
+                            <img src="./newassets/assets/img/Mask Group 12.png" alt="">
+                            <img src="./newassets/assets/img/Mask Group 13.png" alt="">
+                            <img src="./newassets/assets/img/Mask Group 15.png" alt="">
+                            <img src="./newassets/assets/img/Mask Group 15.png" alt="">
+                            <img src="./newassets/assets/img/Mask Group 15.png" alt="">
+
+                            <img src="./newassets/assets/img/Mask Group 11.png" alt="">
+                            <img src="./newassets/assets/img/Mask Group 12.png" alt="">
+                            <img src="./newassets/assets/img/Mask Group 13.png" alt="">
+                            <img src="./newassets/assets/img/Mask Group 15.png" alt="">
+                            <img src="./newassets/assets/img/Mask Group 15.png" alt="">
+                            <img src="./newassets/assets/img/Mask Group 15.png" alt="">
+                        </div>
+                    </div>
+                    <div class="box-1">
+                        <p>User experience design is the complete process of enhancing customer satisfaction and loyalty
+                            by increasing the usability, ease of use, and preference provided in the interaction between
+                            the customer and the product. The various activities to be carried out by a UX designer
+                            would be Competitor/Customer Analysis, Product Building, Content Development, Wireframing,
+                            Prototyping, Assessment/Iteration, Progress Planning, Coordination with Developers, Tracking
+                            Goals and Integration, Analysis, etc.</p>
+                        <div class="btn sec-3">
+                            <a href="#">Learn More<img src="./newassets/assets/img/Icon ionic-ios-arrow-round-forward.png"
+                                    alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section:4-End -->
+
+        <!-- Section:5[Roles]-Start -->
+        <section class="section-5">
+            <div class="wrapper">
+                <div class="title">
+                    <h1>What is <span>User Interface</span> Design?<br> &<br>What are the <span>roles of UI
+                            Designer?</span></h1>
+                </div>
+                <div class="cards flex">
+                    <div class="box-1">
+                        <p>User Interface Design is a process of visually directing the user through a product's
+                            interface through interactive elements and across all sizes/platforms. Enhancing the Look &
+                            Feel as well as its Responsiveness&Interactivity can be the main role of a Ul designer. The
+                            various activities to be carried out by a UX designer would be Customer Analysis, Design
+                            planning. Branding and Graphic Development, UI Prototyping, Interactivity and animation,
+                            Adaptation to all device screen sizes, Coordination with developers etc.</p>
+                        <div class="btn sec-3">
+                            <a href="#">Learn More<img src="./newassets/assets/img/Icon ionic-ios-arrow-round-forward.png"
+                                    alt=""></a>
+                        </div>
+                    </div>
+                    <div class="box-2 flex">
+                        <div class="small-box">
+                            <img src="./newassets/assets/img/1_high.png" alt="">
+                            <img src="./newassets/assets/img/7_high.png" alt="">
+                            <img src="./newassets/assets/img/10_high.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section:5-End -->
+
+        <!-- Section:6[Flexible Course]-Start -->
+        <section class="section-6">
+            <div class="wrapper">
+                <div class="title">
+                    <h1>We offer you <span>Flexible Course Timing</span><br>(Weekday & Weekend Batches)</h1>
+                </div>
+                <div class="content flex">
+                    <div class="box">
+                        <div class="btn sec-6">
+                            <a href="#">Weekday<img src="./newassets/assets/img/Icon ionic-ios-arrow-round-forward.png"
+                                    alt=""></a>
+                        </div>
+                        <div class="cards">
+                            <div class="card">
+                                <div class="image">
+                                    <img src="./newassets/assets/img/Group 1034.png" alt="">
+                                </div>
+                                <div class="cont">
+                                    <h3>5 Months</h3>
+                                    <p>Course Duration</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="image">
+                                    <img src="./newassets/assets/img/Artboard 7.png" alt="">
+                                </div>
+                                <div class="cont">
+                                    <h3>60 Sessions</h3>
+                                    <p>In-depth Concepts</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="image">
+                                    <img src="./newassets/assets/img/Artboard 8.png" alt="">
+                                </div>
+                                <div class="cont">
+                                    <h3>90 Minutes</h3>
+                                    <p>On Alternative Days</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="btn sec-6">
+                            <a href="#">Weekend<img src="./newassets/assets/img/Icon ionic-ios-arrow-round-forward.png"
+                                    alt=""></a>
+                        </div>
+                        <div class="cards card1">
+                            <div class="card">
+                                <div class="image">
+                                    <img src="./newassets/assets/img/Group 1034.png" alt="">
+                                </div>
+                                <div class="cont">
+                                    <h3>7 Months</h3>
+                                    <p>Course Duration</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="image">
+                                    <img src="./newassets/assets/img/Artboard 7.png" alt="">
+                                </div>
+                                <div class="cont">
+                                    <h3>60 Sessions</h3>
+                                    <p>In-depth Concepts</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="image">
+                                    <img src="./newassets/assets/img/Artboard 8.png" alt="">
+                                </div>
+                                <div class="cont">
+                                    <h3>180 Minutes</h3>
+                                    <p>On Alternative Days</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section:6-End -->
+
+        <!-- Section:7[Anyone]-Start -->
+        <section class="section-7">
+            <div class="wrapper">
+                <div class="title">
+                    <h1>'<span>ANYONE</span> can become a UX UI Designer!'</h1>
+                </div>
+                <div class="cards flex">
+                    <div class="box">
+                        <div class="card">
+                            <img src="./newassets/assets/img/Icon feather-check copy.png" alt="" srcset="">
+                            <p>Anyone with<span> Zero coding knowledge</span></p>
+                        </div>
+                        <div class="card">
+                            <img src="./newassets/assets/img/Icon feather-check copy.png" alt="" srcset="">
+                            <p>Anyone with or <span> without university degree</span></p>
+                        </div>
+                        <div class="card">
+                            <img src="./newassets/assets/img/Icon feather-check copy.png" alt="" srcset="">
+                            <p>Anyone with<span> different career background</span></p>
+                        </div>
+                        <div class="card">
+                            <img src="./newassets/assets/img/Icon feather-check copy.png" alt="" srcset="">
+                            <p>Anyone with different<span> educational background</span></p>
+                        </div>
+                        <div class="card">
+                            <img src="./newassets/assets/img/Icon feather-check copy.png" alt="" srcset="">
+                            <p>Anyone who have<span> passion for design</span></p>
+                        </div>
+                        <div class="card">
+                            <img src="./newassets/assets/img/Icon feather-check copy.png" alt="" srcset="">
+                            <p>Anyone who have<span> patience to do research</span></p>
+                        </div>
+                        <div class="card">
+                            <img src="./newassets/assets/img/Icon feather-check copy.png" alt="" srcset="">
+                            <p>Anyone who is a<span> Student / Undergraduate / Freelancer /<br>
+                                    Graphic Designer / Web Developer / Project Manager...</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg">
+                <div class="wrapper">
+                    <h2>Few steps ahead...</h2>
+                    <form action="#" class="flex">
+                        <input type="email" placeholder="Email*">
+                        <div class="box flex">
+                            <span>+91</span>
+                            <input type="text" placeholder="Mobile Number*">
+                        </div>
+                        <div class="btn">
+                            <a href="#">Enquire Now</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- Section:7-End -->
+
+        <!-- Section:8[Best UX UI]-Start -->
+        <section class="section-8">
+            <div class="wrapper">
+                <div class="title">
+                    <h1>Why Web D School is <span>The Best UX UI Design</span> training institute<br>in Chennai?</h1>
+                </div>
+                <div class="cards">
+                    <div class="card">
+                        <div class="image">
+                            <img src="./newassets/assets/img/16600333871600459979.png" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Regular Assesments</h3>
+                            <p>But I must explain to you how all this mistaken idea of pleasure and praising pain was
+                                born.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image">
+                            <img class="imgs" src="./newassets/assets/img/Negotiation.png" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>100% Job Placement</h3>
+                            <p>But I must explain to you how all this mistaken idea of pleasure and praising pain was
+                                born.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image">
+                            <img src="./newassets/assets/img/17872926761610058220.png" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Portfolio Assistance</h3>
+                            <p>But I must explain to you how all this mistaken idea of pleasure and praising pain was
+                                born.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cards">
+                    <div class="card">
+                        <div class="image">
+                            <img src="./newassets/assets/img/163983763316274686813758.png" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Expert Trainers</h3>
+                            <p>But I must explain to you how all this mistaken idea of pleasure and praising pain was
+                                born.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image">
+                            <img src="./newassets/assets/img/layer2.png" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Live Sessions</h3>
+                            <p>But I must explain to you how all this mistaken idea of pleasure and praising pain was
+                                born.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image">
+                            <img src="./newassets/assets/img/2137556021536922358.png" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Unlimited Lab Hours</h3>
+                            <p>But I must explain to you how all this mistaken idea of pleasure and praising pain was
+                                born.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section:8-End -->
+
+        <!-- Section:9[Syllabus]-Start -->
+        <section class="section-9">
+            <div class="wrapper">
+                <div class="title">
+                    <h1>Our UX UI Design Course Syllabus covers<br><span>Expansive concepts</span></h1>
+                </div>
+                <div class="content">
+                    <div class="modules">
+                        <div class="boxes">
+                            <div id="cll">
+                                <div class="topic" onclick="accordImage()">
+                                    <h2 >UX Design Training Modules</h2>
+                                    <img src="./newassets/assets/img/Icon.png" id="accordImagess" alt="">
+                                </div>  
+                            </div>
+                            <div>
+                            <div class="boxes1" id="calp" >
+                                <div class="list" onclick="moduleImage()">
+                                    <div class="title">
+                                        <p>Module 1: Introduction to User Experience</p>
+                                        <img src="./newassets/assets/img/Path2468.png" id="modulesImagess" alt="" width="15px">
+                                    </div>
+                                    <div class="boxes-child" id="collapsep" >
+
+                                        <ul class="outer">
+                                            <li>Design Thinking</li>
+                                            <li>User Centered Design Principles</li>
+                                            <li>Starting an UX student project</li>
+                                            <li>Role, Requirement & ROI</li>
+                                            <li>Feature Prioritization</li>
+                                            <li>Process models
+                                                <ul class="inner">
+                                                    <li>- Waterfall Process model</li>
+                                                    <li>- Agile Process model</li>
+                                                    <li>- Scrum Process model</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="boxes1" id="cal1">
+                                <div class="list" onclick="moduleImage1()">
+                                    <div class="title">
+                                        <p  >Module 2: Research</p>
+                                        <img src="./newassets/assets/img/Path2469.png" id="modulesImagess1"  alt="" style="width: 11px;">
+                                    </div>
+                                    <div class="boxes-child" id="collapse1" style="display:none;">
+
+                                        <ul class="outer">
+                                            <li>User experience research techniques</li>
+                                            <li>User personas</li>
+                                            <li>Creating scenarios</li>
+                                            <li>Empathy mapping</li>
+                                            <li>Stakeholder interview</li>
+                                            <li>User stories</li>
+                                            <li>User interviews / observation</li>
+                                            <li>Affinity mapping</li>
+                                            <li>Conducting surveys</li>
+                                            <li>Deconstructing an app/site</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="boxes1" id="cal2">
+                                <div class="list"onclick="moduleImage2()">
+                                    <div class="title">
+                                        <p>Module 3: Analysis</p>
+                                        <img src="./newassets/assets/img/Path2469.png"id="modulesImagess2" alt="" style="width: 10px;">
+                                    </div>
+                                    <div class="boxes-child" id="collapse2" style="display:none;">
+
+                                        <ul class="outer">
+                                            <li>Competitor analysis</li>
+                                            <li>User centered analysis</li>
+                                            <li>Data analysis</li>
+                                            <li>Heuristic analysis</li>
+                                            <li>Task flow evaluation</li>
+                                            <li>Attributes, Goals, Perspectives &amp; Pain points</li>
+                                            <li>Google analytics</li>
+                                            <li>Human computer interaction</li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="boxes1" id="cal3">
+                                <div class="list">
+                                    <div class="title"onclick="moduleImage3()">
+                                        <p>Module 4: Design strategy</p>
+                                        <img src="./newassets/assets/img/Path2469.png"id="modulesImagess3" alt="" style="width: 10px;">
+                                    </div>
+                                    <div class="boxes-child" id="collapse3" style="display:none;">
+
+                                        <ul class="outer">
+                                            <li>Intuitive &amp; Persuasive designing</li>
+                                            <li>Design user flows | user journeys</li>
+                                            <li>Entry points</li>
+                                            <li>Effective content strategy</li>
+                                            <li>Low fidelity sketching</li>
+                                            <li>Paper prototype</li>
+                                            <li>Site maps | Process diagrams</li>
+                                            <li>Information Architecture</li>
+                                            <li>Navigational models</li>
+                                            <li>Mental models</li>
+                                            <li>Early usability testing</li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="boxes1" id="cal4">
+                                <div class="list"onclick="moduleImage4()">
+                                    <div class="title">
+                                        <p>Module 5: Sketching, Wireframe & Prototype</p>
+                                        <img src="./newassets/assets/img/Path2469.png"id="modulesImagess4" alt="" style="width: 10px;">
+                                    </div>
+                                    <div class="boxes-child" id="collapse4" style="display:none;">
+
+                                        <ul class="outer">
+                                            <li>Customer experience framework</li>
+                                            <li>Low fidelity models</li>
+                                            <li>High fidelity models</li>
+                                            <li>Workflows</li>
+                                            <li>Prototype � Web, Mobile &amp; Tablet</li>
+                                            <li>Interactive prototype</li>
+                                            <li>Rapid prototyping � Sprint</li>
+                                            <li>Error handling</li>
+                                            <li>Minimum Viable Product (MVP)</li>
+                                            <li>Tools
+                                                <ul class="inner">
+                                                    <li>- Axure</li>
+                                                    <li>- Balsamiq</li>
+                                                    <li>- Invision</li>
+                                                </ul>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="boxes1" id="cal5">
+                                <div class="list"onclick="moduleImage5()">
+                                    <div class="title">
+                                        <p>Module 6: Testing</p>
+                                        <img src="./newassets/assets/img/Path2469.png" id="modulesImagess5" alt="" style="width: 10px;">
+                                    </div>
+                                    <div class="boxes-child" id="collapse5" style="display:none;">
+
+                                        <ul class="outer">
+                                            <li>Usability testing</li>
+                                            <li>Remote usability testing</li>
+                                            <li>Task grids</li>
+                                            <li>Feedback analysis</li>
+                                            <li>Reiterate</li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="boxes1" id="cal6">
+
+                                <div class="list">
+                                    <div class="title"onclick="moduleImage6()">
+                                        <p>Module 7: Case studies</p>
+                                        <img src="./newassets/assets/img/Path2469.png"id="modulesImagess6" alt="" style="width: 10px;">
+                                    </div>
+                                    <div class="boxes-child" id="collapse6" style="display:none;">
+
+                                        <ul class="outer">
+                                            <li>UX project completion &amp; Documentation</li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="modules">
+                        <div >
+                            <div id="second">
+                                <div class="topic" onclick="accordImage1()">
+                                    <h2>UI design training modules</h2>
+                                    <img src="./newassets/assets/img/Icon ionic-ios-arrow-dropdown.png" id="accordImagess1" alt="">
+                                </div>
+                            </div>
+                            <div id="pan2" style="display: none;">
+                            <div class="boxes2" id="val">
+                                <div class="list"onclick="moduleImage7()">
+                                    <div class="title">
+                                        <p>Module 1: Introduction to User Interface design</p>
+                                        <img src="./newassets/assets/img/Path2469.png" id="modulesImagess7"  alt="" style="width: 10px;">
+                                    </div>
+                                    <div class="boxes2-child" id="colla" style="display:none;">
+
+                                        <ul class="outer">
+                                            <li>UI design process</li>
+                                            <li>Design psychology</li>
+                                            <li>Web, Mobile &amp; Tablet visual designing</li>
+                                            <li>Human factors &amp; Ergonomics</li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="boxes2" id="val1">
+                                <div class="list"onclick="moduleImage8()">
+                                    <div class="title">
+                                        <p>Module 2: Visual design</p>
+                                        <img src="./newassets/assets/img/Path2469.png" id="modulesImagess8"  alt="" style="width: 10px;">
+                                    </div>
+                                    <div class="boxes2-child" id="colla1" style="display:none;">
+
+                                        <ul class="outer">
+                                            <li>Creating storyboards</li>
+                                            <li>Product design</li>
+                                            <li>Colour theory</li>
+                                            <li>Layouts</li>
+                                            <li>Typography</li>
+                                            <li>Iconography</li>
+                                            <li>Infographics</li>
+                                            <li>Branding design</li>
+                                            <li>Image editing</li>
+                                            <li>Web template design</li>
+                                            <li>Creating UI elements</li>
+                                            <li>UI Kits &amp; Image widgets</li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="boxes2" id="val2">
+                                <div class="list"onclick="moduleImag9()">
+                                    <div class="title">
+                                        <p>Module 3: Visual design</p>
+                                        <img src="./newassets/assets/img/Path2469.png" id="modulesImagess9"  alt="" style="width: 10px;">
+                                    </div>
+                                    <div class="boxes2-child" id="colla2" style="display:none;">
+
+                                        <ul class="outer">
+                                            <li>Photoshop</li>
+                                            <li>Illustrator</li>
+                                            <li>Indesign</li>
+                                            <li>Sketch</li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="boxes2" id="val3">
+                                <div class="list"onclick="moduleImage10()">
+                                    <div class="title">
+                                        <p>Module 4: Google Material design</p>
+                                        <img src="./newassets/assets/img/Path2469.png" id="modulesImagess10"  alt="" style="width: 10px;">
+                                    </div>
+                                    <div class="boxes2-child" id="colla3" style="display:none;">
+
+                                        <ul class="outer">
+                                            <li>Google Material design</li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="boxes2" id="val4">
+                                <div class="list"onclick="moduleImage11()">
+                                    <div class="title">
+                                        <p>Module 5: Visual design output &amp;
+                                            Documentation</p>
+                                        <img src="./newassets/assets/img/Path2469.png" id="modulesImagess11"  alt="" style="width: 10px;">
+                                    </div>
+                                    <div class="boxes2-child" id="colla4" style="display:none;">
+
+                                        <ul class="outer">
+                                            <li>Visual design output &amp; Documentation</li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="boxes2" id="val5">
+                                <div class="list"onclick="moduleImage12()">
+                                    <div class="title">
+                                        <p>Module 6: High impact presentations</p>
+                                        <img src="./newassets/assets/img/Path2469.png" id="modulesImagess12"  alt="" style="width: 10px;">
+                                    </div>
+                                    <div class="boxes2-child" id="colla5" style="display:none;">
+                                        <ul class="outer">
+                                            <li>High impact presentations</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div></div>
+                        </div>
+
+                    </div>
+                    <div class="modules">
+                        <div>
+                            <div id="fl">
+                                <div class="topic"  onclick="accordImage2()">
+                                    <h2>Ul development training modules</h2>
+                                    <img src="./newassets/assets/img/Icon ionic-ios-arrow-dropdown.png" id="accordImagess2" alt="">
+                                </div>
+                            </div>
+                            <div id="pan" style="display: none;">
+                            <div class="boxes3" id="vai1">
+                                <div class="list"onclick="moduleImage13()">
+                                    <div class="title">
+                                        <p>Module 1: HTML5 &amp; CSS3</p>
+                                        <img src="./newassets/assets/img/Path2469.png" id="modulesImagess13" alt="" style="width: 10px;">
+                                    </div>
+                                    <div class="boxes3-child" id="collap1" style="display:none;">
+
+                                        <ul class="outer" >
+                                            <li>Design Engineering</li>
+                                            <li>Building web pages</li>
+                                            <li>Creating responsive layouts</li>
+                                            <li>Designing buttons, tooltips etc</li>
+                                            <li>Interactive prototype</li>
+                                            <li>MVC pattern</li>
+                                            <li>Usability testing</li>
+                                            <li>Cross browser compatibility</li>
+                                            <li>Creating Visual Mockups</li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="boxes3" id="vai2">
+                                <div class="list"onclick="moduleImage14()">
+                                    <div class="title">
+                                        <p>Module 2: Javascript, Jquery, Bootstrap</p>
+                                        <img src="./newassets/assets/img/Path2469.png" id="modulesImagess14" alt="" style="width: 10px;">
+                                    </div>
+                                    <div class="boxes3-child" id="collap2" style="display:none;">
+
+                                        <ul class="outer" >
+                                            <li>An overview</li>
+                                            <li>Basic principles &amp; functionalities</li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="boxes3" id="vai3">
+                                <div class="list"onclick="moduleImage15()">
+                                    <div class="title">
+                                        <p>Module 3: Phonegap &amp; Cordova</p>
+                                        <img src="./newassets/assets/img/Path2469.png" id="modulesImagess15" alt="" style="width: 10px;">
+                                    </div>
+                                    <div class="boxes3-child" id="collap3" style="display:none;">
+
+                                        <ul class="outer" >
+                                            <li>An Overview</li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="boxes3" id="vai4">
+                                <div class="list"onclick="moduleImage16()">
+                                    <div class="title">
+                                        <p>Module 4: Final Portfolio Output</p>
+                                        <img src="./newassets/assets/img/Path2469.png" id="modulesImagess16" alt="" style="width: 10px;">
+                                    </div>
+                                    <div class="boxes3-child" id="collap4" style="display:none;">
+
+                                        <ul class="outer" >
+                                            <li>Final Portfolio Output</li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="boxes3" id="vai5">
+                                <div class="list"onclick="moduleImage17()">
+                                    <div class="title">
+                                        <p>Module 5: Form Handling</p>
+                                        <img src="./newassets/assets/img/Path2469.png" id="modulesImagess17" alt="" style="width: 10px;">
+                                    </div>
+                                    <div class="boxes3-child" id="collap5" style="display:none;">
+
+                                        <ul class="outer" >
+                                            <li>Basics of form Handling</li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+    </div>
+            <div class="bg">
+                <div class="wrapper">
+                    <h2>For more details...</h2>
+                    <div class="flex">
+                        <div class="btn">
+                            <a href="#">Download Free Prospectus <img src="./newassets/assets/img/Group 1035.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section:9-End -->
+
+        <!-- Section:10[Tools]-Start -->
+        <section class="section-10">
+            <div class="wrapper">
+                <div class="title">
+                    <h1>We teach <span>Industry standard tools</span></h1>
+                </div>
+                <div class="cards flex">
+                    <div class="card flex card-1">
+                        <div class="image">
+                            <img src="./newassets/assets/img/smileyface-transparent-1080x1080 (1).png" alt="">
+                        </div>
+                        <h2>Balsamiq</h2>
+                    </div>
+                    <div class="card flex card-2">
+                        <div class="image">
+                            <img src="./newassets/assets/img/adobe-xd-2.png" alt="">
+                        </div>
+                        <h2>Adobe XD</h2>
+                    </div>
+                    <div class="card flex card-3">
+                        <div class="image">
+                            <img src="./newassets/assets/img/figma-1.png" alt="">
+                        </div>
+                        <h2>Figma</h2>
+                    </div>
+                    <div class="card flex card-4">
+                        <div class="image">
+                            <img src="./newassets/assets/img/sketch-2.png" alt="">
+                        </div>
+                        <h2>Sketch</h2>
+                    </div>
+                </div>
+                <div class="cards flex">
+                    <div class="card flex card-5">
+                        <div class="image">
+                            <img src="./newassets/assets/img/adobe-photoshop-2.png" alt="">
+                        </div>
+                        <h2>Photoshop</h2>
+                    </div>
+                    <div class="card flex card-6">
+                        <div class="image">
+                            <img src="./newassets/assets/img/adobe-illustrator-cc-icon.png" alt="">
+                        </div>
+                        <h2>Illustrator</h2>
+                    </div>
+                    <div class="card flex card-7">
+                        <div class="image">
+                            <img src="./newassets/assets/img/axure logo.png" alt="">
+                        </div>
+                        <h2>Axure</h2>
+                    </div>
+                    <div class="card flex card-8">
+                        <div class="image">
+                            <img src="./newassets/assets/img/html-1.png" alt="">
+                        </div>
+                        <h2>HTML5</h2>
+                    </div>
+                </div>
+                <div class="cards flex">
+                    <div class="card flex card-9">
+                        <div class="image">
+                            <img src="./newassets/assets/img/css-3.png" alt="">
+                        </div>
+                        <h2>CSS3</h2>
+                    </div>
+                    <div class="card flex card-10">
+                        <div class="image">
+                            <img src="./newassets/assets/img/bootstrap-4.png" alt="">
+                        </div>
+                        <h2>Bootstrap</h2>
+                    </div>
+                    <div class="card flex card-11">
+                        <div class="image">
+                            <img src="./newassets/assets/img/mirologo-freelogovectors.net_.png" alt="">
+                        </div>
+                        <h2>MIRO</h2>
+                    </div>
+                    <div class="card flex card-12">
+                        <div class="image">
+                            <img src="./newassets/assets/img/Mask Group 23.png" alt="">
+                        </div>
+                        <h2>JIRA</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section:10-End -->
+
+        <!-- Section:11[SOAP]-Start -->
+        <section class="section-11">
+            <div class="wrapper">
+                <div class="title">
+                    <h1>We ensure <span>Continuous Progress</span> of our students
+                        through<br><span>S.O.A.P</span>(Student Output Assessment Plan)</h1>
+                </div>
+                <div class="desc flex">
+                    <div class="box desktop">
+                        <p>Throughout the course, our students would be assigned a specific number of task to be
+                            completed which would be assessed to<br>provide constructive feedback to them.</p>
+                        <p>For UX UI Design Course at Web D School, our students are assigned the following <span>24
+                                tasks</span> for assessments.</p>
+                    </div>
+
+                    <div class="box mobile">
+                        <p>Throughout the course, our students would be assigned a specific number of task to be
+                            completed which would be assessed to provide constructive feedback to them.</p>
+                        <p>For UX UI Design Course at Web D School, our students are assigned the following <span>24
+                                tasks</span> for assessments.</p>
+                    </div>
+                </div>
+                <article id="demo-flat" class="demo">                
+                    <div id="flat">
+                        <ul>
+                            <li data-flip-title="Red" >
+                                <img src="./newassets/assets/img/12.png">
+                            <li data-flip-title="Razzmatazz" data-flip-category="Purples">
+                                <img src="./newassets/assets/img/12.png">
+                             </li>
+                            <li data-flip-title="Deep Lilac" data-flip-category="Purples">
+                                <img src="./newassets/assets/img/11.png">
+                            </li>
+                            <li data-flip-title="Daisy Bush" data-flip-category="Purples">
+                                <img src="./newassets/assets/img/14.png">
+                            </li>
+                            <li data-flip-title="Cerulean Blue" data-flip-category="Blues">
+                                <img src="./newassets/assets/img/12.png">
+                            </li>
+                            <!-- <li data-flip-title="Dodger Blue" data-flip-category="Blues">
+                                <img src="./newassets/assets/img/text2.gif">
+                            </li>
+                            <li data-flip-title="Cyan" data-flip-category="Blues">
+                                <img src="./newassets/assets/img/text2.gif">
+                            </li>
+                            <li data-flip-title="Robin's Egg" data-flip-category="Blues">
+                                <img src="./newassets/assets/img/text2.gif">
+                            </li>
+                            <li data-flip-title="Deep Sea" data-flip-category="Greens">
+                                <img src="./newassets/assets/img/text2.gif">
+                            </li>
+                            <li data-flip-title="Apple" data-flip-category="Greens">
+                                <img src="./newassets/assets/img/text2.gif">
+                            </li> -->
+                        </ul>
+                    </div>
+                
+                <script>
+                    var flat = $("#flat").flipster({
+                        style: 'flat',
+                        spacing: -0.25
+                    });
+                </script>
+                
+                
+                
+                </article>
+                <!-- <div class="cards flex">
+                    <div class="card flex">
+                        <div class="image flex">
+                            <i class="fa-solid fa-chevron-left"></i>
+                            <img src="./newassets/assets/img/Group 1002.png" alt="">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                        <h3>AXURE-BALSAMIQ</h3>
+                        <ul class="flex">
+                            <li><i class="fa-solid fa-circle"></i> Wireframing</li>
+                            <li><i class="fa-solid fa-circle"></i> Medium Fidelity Screens</li>
+                        </ul>
+                    </div>
+                    <div class="card flex">
+                        <div class="image flex">
+                            <i class="fa-solid fa-chevron-left"></i>
+                            <img src="./newassets/assets/img/Group 1002.png" alt="">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                        <h3>UX RESEARCH</h3>
+                        <ul class="flex">
+                            <li><i class="fa-solid fa-circle"></i> Project Description</li>
+                            <li><i class="fa-solid fa-circle"></i> User Persona</li>
+                            <li><i class="fa-solid fa-circle"></i> Story Boarding</li>
+                            <li><i class="fa-solid fa-circle"></i> Information Architecture</li>
+                            <li><i class="fa-solid fa-circle"></i> Competitor Analysis</li>
+                            <li><i class="fa-solid fa-circle"></i> User Flow</li>
+                            <li><i class="fa-solid fa-circle"></i> Low Fidelity Screens</li>
+                        </ul>
+                    </div>
+                    <div class="card flex">
+                        <div class="image flex">
+                            <i class="fa-solid fa-chevron-left"></i>
+                            <img src="./newassets/assets/img/Group 1002.png" alt="">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                        <h3>XD-FIGMA-SKETCH</h3>
+                        <ul class="flex">
+                            <li><i class="fa-solid fa-circle"></i> High Fidelity Screens</li>
+                            <li><i class="fa-solid fa-circle"></i> User Persona</li>
+                            <li><i class="fa-solid fa-circle"></i> Story Boarding</li>
+                            <li><i class="fa-solid fa-circle"></i> Information Architecture</li>
+                            <li><i class="fa-solid fa-circle"></i> Competitor Analysis</li>
+                            <li><i class="fa-solid fa-circle"></i> User Flow</li>
+                            <li><i class="fa-solid fa-circle"></i> Low Fidelity Screens</li>
+                        </ul>
+                    </div>
+                    <div class="card flex">
+                        <div class="image flex">
+                            <i class="fa-solid fa-chevron-left"></i>
+                            <img src="./newassets/assets/img/Group 1002.png" alt="">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                        <h3>HTML-CSS</h3>
+                        <ul class="flex">
+                            <li><i class="fa-solid fa-circle"></i> Web Page Creation</li>
+                            <li><i class="fa-solid fa-circle"></i> App Screen Creation</li>
+                        </ul>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+        <!-- Section:11-End -->
+
+        <!-- Section:12[Reviews]-Start -->
+        <section class="section-12">
+            <div class="bg">
+                <div class="wrapper">
+                    <h2>Reviews from the web...</h2>
+                    <div class="cards">
+                        <div class="card">
+                            <h3>Facebook</h3>
+                            <h1>5/5</h1>
+                            <p>41 votes</p>
+                        </div>
+                        <div class="card">
+                            <h3>Justdial</h3>
+                            <h1>4.6/5</h1>
+                            <p>422 votes</p>
+                        </div>
+                        <div class="card">
+                            <h3>EduGorilla Listings</h3>
+                            <h1>5/5</h1>
+                            <p>5 votes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section:12-End -->
+
+        <!-- Section:13[Placed]-Start -->
+        <section class="section-13">
+            <div class="wrapper">
+                <div class="title">
+                    <h1>Our UX UI Design students got placed in <span>Reputed Companies</span></h1>
+                </div>
+                
+                <div class="desktop">
+                    <div class="cards">
+                        <div class="mySlidesss" >
+                        <div class="card" >
+                            <div class="image">
+                                <img src="./newassets/assets/img/face2.png" alt="">
+                            </div>
+                            <div class="content">
+                                <h2>SARANYA DEVI</h2>
+                                <p>Product Analyst</p>
+                                <p>@ Dukaan</p>
+                                <h1>CTC: 4.8 LPA</h1>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="image">
+                                <img src="./newassets/assets/img/face1.png" alt="">
+                            </div>
+                            <div class="content blues">
+                                <h2>SHYAM SUNDAR</h2>
+                                <p>Associate Software Engineer</p>
+                                <p>@ Applied Materials</p>
+                                <h1>CTC: 7.2 LPA</h1>
+                            </div>
+                        </div>
+                                                    <div class="card">
+                                <div class="image">
+                                    <img src="./newassets/assets/img/face2.png" alt="">
+                                </div>
+                                <div class="content oranges">
+                                    <h2>SARANYA DEVI</h2>
+                                    <p>Product Analyst</p>
+                                    <p>@ Dukaan</p>
+                                    <h1>CTC: 4.8 LPA</h1>
+                                </div>
+                            </div>
+                    </div>
+                        <div class="mySlidesss" >
+                            <div class="card" >
+                                <div class="image">
+                                    <img src="./newassets/assets/img/face2.png" alt="">
+                                </div>
+                                <div class="content">
+                                    <h2>xy</h2>
+                                    <p>Product Analyst</p>
+                                    <p>@ Dukaan</p>
+                                    <h1>CTC: 4.8 LPA</h1>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="image">
+                                    <img src="./newassets/assets/img/face1.png" alt="">
+                                </div>
+                                <div class="content blues">
+                                    <h2>Wajid Basha</h2>
+                                    <p>Associate Software Engineer</p>
+                                    <p>@ Applied Materials</p>
+                                    <h1>CTC: 7.2 LPA</h1>
+                                </div>
+                            </div>
+                                                        <div class="card">
+                                    <div class="image">
+                                        <img src="./newassets/assets/img/face2.png" alt="">
+                                    </div>
+                                    <div class="content oranges">
+                                        <h2>xy</h2>
+                                        <p>Product Analyst</p>
+                                        <p>@ Dukaan</p>
+                                        <h1>CTC: 4.8 LPA</h1>
+                                    </div>
+                                </div>
+                    </div>
+                        <div class="mySlidesss" >
+                            <div class="card" >
+                                <div class="image">
+                                    <img src="./newassets/assets/img/face2.png" alt="">
+                                </div>
+                                <div class="content">
+                                    <h2>yz</h2>
+                                    <p>Product Analyst</p>
+                                    <p>@ Dukaan</p>
+                                    <h1>CTC: 4.8 LPA</h1>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="image">
+                                    <img src="./newassets/assets/img/face1.png" alt="">
+                                </div>
+                                <div class="content blues">
+                                    <h2>yz</h2>
+                                    <p>Associate Software Engineer</p>
+                                    <p>@ Applied Materials</p>
+                                    <h1>CTC: 7.2 LPA</h1>
+                                </div>
+                            </div>
+                                                        <div class="card">
+                                    <div class="image">
+                                        <img src="./newassets/assets/img/face2.png" alt="">
+                                    </div>
+                                    <div class="content oranges">
+                                        <h2>yz</h2>
+                                        <p>Product Analyst</p>
+                                        <p>@ Dukaan</p>
+                                        <h1>CTC: 4.8 LPA</h1>
+                                    </div>
+                                </div>
+                    </div>
+                        <div class="mySlidesss">
+                            <div class="card" >
+                                <div class="image">
+                                    <img src="./newassets/assets/img/face2.png" alt="">
+                                </div>
+                                <div class="content">
+                                    <h2>XYZ names</h2>
+                                    <p>Product Analyst</p>
+                                    <p>@ Dukaan</p>
+                                    <h1>CTC: 4.8 LPA</h1>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="image">
+                                    <img src="./newassets/assets/img/face1.png" alt="">
+                                </div>
+                                <div class="content blues">
+                                    <h2>XYZ names</h2>
+                                    <p>Associate Software Engineer</p>
+                                    <p>@ Applied Materials</p>
+                                    <h1>CTC: 7.2 LPA</h1>
+                                </div>
+                            </div>
+                                                        <div class="card">
+                                    <div class="image">
+                                        <img src="./newassets/assets/img/face2.png" alt="">
+                                    </div>
+                                    <div class="content oranges">
+                                        <h2>XYZ names</h2>
+                                        <p>Product Analyst</p>
+                                        <p>@ Dukaan</p>
+                                        <h1>CTC: 4.8 LPA</h1>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mobile">
+                    <div class="cards">
+                        <div class="mySlidesss" >
+                        <div class="card" >
+                            <div class="image">
+                                <img src="./newassets/assets/img/face2.png" alt="">
+                            </div>
+                            <div class="content">
+                                <h2>SARANYA DEVI</h2>
+                                <p>Product Analyst</p>
+                                <p>@ Dukaan</p>
+                                <h1>CTC: 4.8 LPA</h1>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="mySlidesss" >
+                            <div class="card">
+                                <div class="image">
+                                    <img src="./newassets/assets/img/face1.png" alt="">
+                                </div>
+                                <div class="content blues">
+                                    <h2>Wajid Basha</h2>
+                                    <p>Associate Software Engineer</p>
+                                    <p>@ Applied Materials</p>
+                                    <h1>CTC: 7.2 LPA</h1>
+                                </div>
+                            </div>
+                    </div>
+                        <div class="mySlidesss">
+                                                        <div class="card">
+                                    <div class="image">
+                                        <img src="./newassets/assets/img/face2.png" alt="">
+                                    </div>
+                                    <div class="content oranges">
+                                        <h2>yz</h2>
+                                        <p>Product Analyst</p>
+                                        <p>@ Dukaan</p>
+                                        <h1>CTC: 4.8 LPA</h1>
+                                    </div>
+                                </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="arrow">
+                    <img src="./newassets/assets/img/arr3.png"  alt="">
+                    <!-- <div class="para">
+                    <p class="p1"></p>
+                    <p ></p>
+                    <p ></p>
+                    </div> -->
+                    <img src="./newassets/assets/img/arr4.png" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- Section:13-End -->
+
+        <!-- Section:14[Partners]-Start -->
+        <section class="section-14">
+            <div class="wrapper">
+                <div class="title">
+                    <h1>Our Webdians working<br>@<br><span>Top MNCs & Start Up Companies...</span></h1>
+                </div>
+                <div class="cards">
+                    <div class="card">
+                        <img src="./newassets/assets/img/Group 1010.png" alt="" srcset="">
+                    </div>
+                    <div class="card">
+                        <img src="./newassets/assets/img/2-c.png" alt="" srcset="">
+                    </div>
+                    <div class="card" style="padding-top: 2%;">
+                        <img src="./newassets/assets/img/3-c.png" alt="" srcset="">
+                    </div>
+                    <div class="count">
+                        <p>+100 Companies <img src="./newassets/assets/img/Icon ionic-ios-arrow-down.png" alt="" srcset=""></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section:14-End -->
+
+        <!-- Section:15[Career]-Start -->
+        <section class="section-15">
+            <div class="wrapper">
+                <div class="title">
+                    <h1>Career Services</h1>
+                </div>
+                <div class="flex flex-box">
+                    <div class="content-1">
+                        <div class="box-1 flex">
+                            <h2 class="flex title1 active">Profile & Resume<br>Building</h2>
+                            <h2 class="flex title2">Soft Skills Training</h2>
+                            <h2 class="flex title3">Job Assistance</h2>
+                        </div>
+                        <div class="box-2 hide1 flex">
+                            <div class="pack">
+                                <div class="top">
+                                    <h2>Profile Building training</h2>
+                                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                        tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+                                        vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+                                        no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+                                        amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                                        labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+                                        et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+                                        sanctus est Lorem ipsum dolor sit amet.
+                                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                        tempor</p>
+                                </div>
+                                <div class="bottom">
+                                    <h2>Resume Building training</h2>
+                                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                        tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+                                        vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+                                        no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+                                        amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                                        labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+                                        et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+                                        sanctus est Lorem ipsum dolor sit amet.
+                                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                        tempor</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="box-3 hide2 flex">
+                            <div class="pack">
+                                <div class="top">
+                                    <h2>Soft Skills Training</h2>
+                                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                        tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+                                        vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+                                        no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+                                        amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                                        labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+                                        et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+                                        sanctus est Lorem ipsum dolor sit amet.
+                                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                        tempor</p>
+                                </div>
+                                <div class="bottom">
+                                    <h2>Resume Building training</h2>
+                                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                        tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+                                        vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+                                        no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+                                        amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                                        labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+                                        et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+                                        sanctus est Lorem ipsum dolor sit amet.
+                                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                        tempor</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="box-4 hide3 flex">
+                            <div class="pack">
+                                <div class="top">
+                                    <h2>Job Training</h2>
+                                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                        tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+                                        vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+                                        no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+                                        amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                                        labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+                                        et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+                                        sanctus est Lorem ipsum dolor sit amet.
+                                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                        tempor</p>
+                                </div>
+                                <div class="bottom">
+                                    <h2>Resume Building training</h2>
+                                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                        tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+                                        vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+                                        no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+                                        amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                                        labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+                                        et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+                                        sanctus est Lorem ipsum dolor sit amet.
+                                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                        tempor</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="content-2 flex">
+                        <div class="card">
+                            <img src="./newassets/assets/img/Mask Group 29.png" alt="">
+                        </div>
+                        <div class="card">
+                            <img src="./newassets/assets/img/Mask Group 30.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section:15-End -->
+
+        <!-- Section:16[Kickstart]-Start -->
+        <section class="section-16">
+            <div class="wrapper">
+                <div class="title">
+                    <h1><span>Kickstart</span> your career as a UX UI Designer...</h1>
+                </div>
+                <div class="cards">
+                    <div class="box">
+                        <div class="btn">
+                            <a href="#">UX Researcher</a>
+                        </div>
+                        <div class="card card-1">
+                            <p>Must understand how a user interacts with an app, and build up interaction and animation
+                                into the
+                                design so that it reacts to the user's touch/instruction.</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="btn">
+                            <a href="#">UX Manager</a>
+                        </div>
+                        <div class="card card-2">
+                            <p>Must understand how a user interacts with an app, and build up interaction and animation
+                                into the
+                                design so that it reacts to the user's touch/instruction.</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="btn">
+                            <a href="#">UX Engineer</a>
+                        </div>
+                        <div class="card card-3">
+                            <p>Must understand how a user interacts with an app, and build up interaction and animation
+                                into the
+                                design so that it reacts to the user's touch/instruction.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="box">
+                        <div class="btn">
+                            <a href="#">Interaction Designer</a>
+                        </div>
+                        <div class="card card-4">
+                            <p>Must understand how a user interacts with an app, and build up interaction and animation
+                                into the
+                                design so that it reacts to the user's touch/instruction.</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="btn">
+                            <a href="#">Product Designer</a>
+                        </div>
+                        <div class="card card-5">
+                            <p>Must understand how a user interacts with an app, and build up interaction and animation
+                                into the
+                                design so that it reacts to the user's touch/instruction.</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="btn">
+                            <a href="#">Visual Designer</a>
+                        </div>
+                        <div class="card card-6">
+                            <p>Must understand how a user interacts with an app, and build up interaction and animation
+                                into the
+                                design so that it reacts to the user's touch/instruction.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn sec-16">
+                    <a href="#">View All<img src="./newassets/assets/img/Icon ionic-ios-arrow-round-forward.png" alt=""></a>
+                </div>
+            </div>
+        </section>
+        <!-- Section:16-End -->
+
+        <!-- Section:17[Trends]-Start -->
+        <!-- <section class="section-17">
+            <div class="wrapper">
+                <div class="title">
+                    <h1> Industry <span>Trends</span></h1>
+                </div>
+            </div>
+        </section> -->
+        <!-- Section:17-End -->
+
+        <!-- Section:18[Webdians]-Start -->
+        <section class="section-18">
+            <div class="wrapper ">
+                <div class="title">
+                    <h1>Our Webdians Says</h1>
+                </div>
+                <div class="cards">
+                    <div class="video">
+                        <iframe src="https://www.youtube.com/embed/Fq2cTkeHAAU" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="content flex">
+                        <div class="box owl-carousel owl-theme">
+                      
+                            <div class="cont item">
+                                <img class="img1" src="./newassets/assets/img/face1.png" alt="">
+                                <h3>Lorem</h3>
+                                <img class="star" src="./newassets/assets/img/star.png" alt="">
+                                <p>Lorem, ipsum dolor sit amet conse adipisicing elit.
+                                    Nesciunt nemo quas, aperiam rerum minus eum tempore
+                                    recusandae sunt laudantium nihil, dolore quis accusamus,
+                                    deserunt dolor aspernatur dolorum quae officia sit.</p>
+                            </div>
+                            <div class="cont item">
+                                <img class="img1" src="./newassets/assets/img/face1.png" alt="">
+                                <h3>Lorem</h3>
+                                <img class="star" src="./newassets/assets/img/star.png" alt="">
+                                <p>Lorem, ipsum dolor sit amet conse adipisicing elit.
+                                    Nesciunt nemo quas, aperiam rerum minus eum tempore
+                                    recusandae sunt laudantium nihil, dolore quis accusamus,
+                                    deserunt dolor aspernatur dolorum quae officia sit.
+                                </p>
+                            </div>
+                            <div class="cont item">
+                                <img class="img1" src="./newassets/assets/img/face1.png" alt="">
+                                <h3>Lorem</h3>
+                                <img class="star" src="./newassets/assets/img/star.png" alt="">
+                                <p>Lorem, ipsum dolor sit amet conse adipisicing elit.
+                                    Nesciunt nemo quas, aperiam rerum minus eum tempore
+                                    recusandae sunt laudantium nihil, dolore quis accusamus,
+                                    deserunt dolor aspernatur dolorum quae officia sit.</p>
+                            </div>
+                       
+                            <!-- <div class="move">
+                                <img class="image1" src="./newassets/assets/img/Icon awesome-arrow-left.png" alt="">
+                                <img class="image2" src="./newassets/assets/img/Icon awesome-arrow-right.png" alt="">
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section:18-End -->
+
+        <!-- Section:19[Projects]-Start -->
+        <section class="section-19">
+            <div class="wrapper">
+                <div class="title">
+                    <h1>Have a look @ Our <span>UX UI Students Projects</span></h1>
+                </div>
+                <div class="desktop bd">
+                    <div class="cards responsive">
+                        <div class="card ">
+                            <div class="image">
+                                <img src="./newassets/assets/img/f1.png" alt="">
+                            </div>
+                            <div class="content">
+                                <div class="imgs">
+                                    <img src="./newassets/assets/img/g1.png" alt="">
+                                </div>
+                                <div class="left">
+                                    <p>Akshara</p>
+                                    <p><span>My Trip</span> - Bus Tracking App Case Study</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card ">
+                            <div class="image">
+                                <img src="./newassets/assets/img/f2.jpg" alt="">
+                            </div>
+                            <div class="content">
+                                <div class="imgs">
+                                    <img src="./newassets/assets/img/g2.png" alt="">
+                                </div>
+                                <div class="left">
+                                    <p>Mithran</p>
+                                    <p><span>Hapi</span> - Donation App Case Study</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card ">
+                            <div class="image">
+                                <img src="./newassets/assets/img/f3.jpg" alt="">
+                            </div>
+                            <div class="content">
+                                <div class="imgs">
+                                    <img src="./newassets/assets/img/g3.png" alt="">
+                                </div>
+                                <div class="left">
+                                    <p>Kripa</p>
+                                    <p><span>Noise Fit</span> - Watch Dashboard</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card ">
+                            <div class="image">
+                                <img src="./newassets/assets/img/f1.png" alt="">
+                            </div>
+                            <div class="content">
+                                <div class="imgs">
+                                    <img src="./newassets/assets/img/g1.png" alt="">
+                                </div>
+                                <div class="left">
+                                    <p>Akshara</p>
+                                    <p><span>My Trip</span> - Bus Tracking App Case Study</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card ">
+                            <div class="image">
+                                <img src="./newassets/assets/img/f2.jpg" alt="">
+                            </div>
+                            <div class="content">
+                                <div class="imgs">
+                                    <img src="./newassets/assets/img/g2.png" alt="">
+                                </div>
+                                <div class="left">
+                                    <p>Mithran</p>
+                                    <p><span>Hapi</span> - Donation App Case Study</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card ">
+                            <div class="image">
+                                <img src="./newassets/assets/img/f3.jpg" alt="">
+                            </div>
+                            <div class="content">
+                                <div class="imgs">
+                                    <img src="./newassets/assets/img/g3.png" alt="">
+                                </div>
+                                <div class="left">
+                                    <p>Kripa</p>
+                                    <p><span>Noise Fit</span> - Watch Dashboard</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mobile">
+                    <div class="cards">
+                        <div class="card">
+                            <div class="image">
+                                <img src="./newassets/assets/img/f1.png" alt="">
+                            </div>
+                            <div class="content">
+                                <div class="imgs">
+                                    <img src="./newassets/assets/img/g1.png" alt="">
+                                </div>
+                                <div class="left">
+                                    <p>Akshara</p>
+                                    <p><span>My Trip</span> - Bus Tracking App Case Study</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="image">
+                                <img src="./newassets/assets/img/f2.jpg" alt="">
+                            </div>
+                            <div class="content">
+                                <div class="imgs">
+                                    <img src="./newassets/assets/img/g2.png" alt="">
+                                </div>
+                                <div class="left">
+                                    <p>Mithran</p>
+                                    <p><span>Hapi</span> - Donation App Case Study</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn sec-19">
+                    <a href="#">View All<img src="./newassets/assets/img/Icon ionic-ios-arrow-round-forward.png" alt=""></a>
+                </div>
+            </div>
+        </section>
+        <!-- Section:19-End -->
+
+        <!-- Section:20[Blogs]-Start -->
+        <section class="section-20">
+            <div class="wrapper">
+                <div class="title">
+                    <h1>Here are some <span>'Must read Blogs'</span> for UX UI Design</h1>
+                </div>
+                <div class="bd">
+                    <div class="cards flex homeslider">
+                        <div class="card flex slide">
+                            <h2>1 10 Aspects about Role of a UI Designer that will Blow Your Mind.</h2>
+                            <img src="./newassets/assets/img/image45-600x400.png" width="100%" alt="">
+                            <p>A UI designer designs the interface of a product and is responsible for its aesthetics
+                                and visual appeal. While the UX designer focuses on the overall experience, ...</p>
+                            <div class="btn">
+                                <a href="#">Read more</a>
+                            </div>
+                        </div>
+                        <div class="card flex slide">
+                            <h2>2 10 Aspects about Role of a UI Designer that will Blow Your Mind.</h2>
+                            <img src="./newassets/assets/img/image45-600x400.png" width="100%" alt="">
+                            <p>A UI designer designs the interface of a product and is responsible for its aesthetics
+                                and visual appeal. While the UX designer focuses on the overall experience, ...</p>
+                            <div class="btn">
+                                <a href="#">Read more</a>
+                            </div>
+                        </div>
+                        <div class="card flex slide">
+                            <h2>3 10 Aspects about Role of a UI Designer that will Blow Your Mind.</h2>
+                            <img src="./newassets/assets/img/image45-600x400.png" width="100%" alt="">
+                            <p>A UI designer designs the interface of a product and is responsible for its aesthetics
+                                and visual appeal. While the UX designer focuses on the overall experience, ...</p>
+                            <div class="btn">
+                                <a href="#">Read more</a>
+                            </div>
+                        </div>
+                        <div class="card flex slide">
+                            <h2>4 10 Aspects about Role of a UI Designer that will Blow Your Mind.</h2>
+                            <img src="./newassets/assets/img/image45-600x400.png" width="100%" alt="">
+                            <p>A UI designer designs the interface of a product and is responsible for its aesthetics
+                                and visual appeal. While the UX designer focuses on the overall experience, ...</p>
+                            <div class="btn">
+                                <a href="#">Read more</a>
+                            </div>
+                        </div>
+                        <div class="card flex slide">
+                            <h2>5 10 Aspects about Role of a UI Designer that will Blow Your Mind.</h2>
+                            <img src="./newassets/assets/img/image45-600x400.png" width="100%" alt="">
+                            <p>A UI designer designs the interface of a product and is responsible for its aesthetics
+                                and visual appeal. While the UX designer focuses on the overall experience, ...</p>
+                            <div class="btn">
+                                <a href="#">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section:20-End -->
+
+        <!-- Section:21[Sneak Peek]-Start -->
+        <section class="section-21">
+            <div class="wrapper">
+                <div class="title">
+                    <h1>Sneak Peek</h1>
+                </div>
+                <div class="slideshow-container">
+                <div class="flex mySlides fade" style="margin-bottom: 3%">
+                    <div class="box-1">
+                        <div class="image-1">
+                            <img src="./newassets/assets/img/Photo_1.jpg" width="100%">
+                        </div>
+                        <div class="image-2"><img src="./newassets/assets/img/Photo_2.jpg"  width="100%"></div>
+                    </div>
+                    <div class="box-2">
+                        <div class="image-1"><img src="./newassets/assets/img/3.jpg"  width="100%"></div>
+                        <div class="image-2"><img src="./newassets/assets/img/4.jpg"  width="100%"></div>
+                        <div class="image-3"><img src="./newassets/assets/img/Photo_5.jpg"  width="100%"></div>
+                    </div>
+                </div>
+                <div class="flex mySlides fade" style="margin-bottom: 3%">
+                    <div class="box-1">
+                        <div class="image-1">
+                            <img src="./newassets/assets/img/Photo_6.jpg" width="100%">
+                        </div>
+                        <div class="image-2"><img src="./newassets/assets/img/Photo_7.jpg"  width="100%"></div>
+                    </div>
+                    <div class="box-2">
+                        <div class="image-1"><img src="./newassets/assets/img/Photo_8.jpg"  width="100%"></div>
+                        <div class="image-2"><img src="./newassets/assets/img/Photo_9.jpg"  width="100%"></div>
+                        <div class="image-3"><img src="./newassets/assets/img/Photo_10.jpg"  width="100%"></div>
+                    </div>
+                </div>
+                <div class="flex mySlides fade" style="margin-bottom: 3%">
+                    <div class="box-1">
+                        <div class="image-1">
+                            <img src="./newassets/assets/img/Photo_11.jpg" width="100%">
+                        </div>
+                        <div class="image-2"><img src="./newassets/assets/img/Photo_12.jpg"  width="100%"></div>
+                    </div>
+                    <div class="box-2">
+                        <div class="image-1"><img src="./newassets/assets/img/Photo_13.jpg"  width="100%"></div>
+                        <div class="image-2"><img src="./newassets/assets/img/Photo_14.jpg"  width="100%"></div>
+                        <div class="image-3"><img src="./newassets/assets/img/Photo_15.jpg"  width="100%"></div>
+                    </div>
+                </div>
+                <div style="text-align:center">
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                  </div>
+            </div>
+            </div>
+        </section>
+        <!-- Section:21-End -->
+
+        <!-- Section:22[FAQ]-Start -->
+        <section class="section-22">
+            <div class="wrapper">
+                <div class="title">
+                    <h1>FAQ</h1>
+                </div>
+                <div class="car">
+                    <div class="cards">
+                        <div class="card">
+                            <div class="image" class="flip">
+                                <img src="./newassets/assets/img/23.png" id="myImage"  alt="">
+                                <!-- <img src="./newassets/assets/img/Ellipse 85.png" alt=""> -->
+                            </div>
+                            <div class="question">
+                                <p class="flip" onclick="changeImage()">What is the career scope for UX UI designing?</p>
+                                <p id="panel">A UI designer designs the interface of a product and is
+                                    responsible for its aesthetics and visual appeal. While
+                                    the UX designer focuses on the overall experience, ...</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="image" class="flip1">
+                                <img src="./newassets/assets/img/21.png"  id="myImage1"
+                                    alt="">
+                            </div>
+                            <div class="question">
+                                <p class="flip1" onclick="changeImage1()">What are the eligibility criteria to join this course?</p>
+                                <p id="panel1">A UI designer designs the interface of a product and is
+                                    responsible for its aesthetics and visual appeal. While
+                                    the UX designer focuses on the overall experience, ...</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="image" class="flip2"  >
+                                <img src="./newassets/assets/img/21.png" id="myImage2">
+                                <!-- <input type="button" value="Change" /> -->
+                                <!-- <img src="./newassets/assets/img/21.png" alt=""> -->
+                            </div>
+                            <div class="question">
+                                <p class="flip2" onclick="changeImage2()">Do I need to be familiar with coding to take this UX UI design training
+                                    in Chennai?</p>
+                                <p id="panel2">A UI designer designs the interface of a product and is
+                                    responsible for its aesthetics and visual appeal. While
+                                    the UX designer focuses on the overall experience, ...</p>
+                            </div>
+                        </div>
+                    </div> 
+                    <!-- <img src="" alt=""> -->
+
+
+                    <div class="cards">
+                        <div class="card">
+                            <div class="image" class="flip3">
+                                <img src="./newassets/assets/img/21.png" alt="" id="myImage3">
+                            </div>
+                            <div class="question">
+                                <p class="flip3" onclick="changeImage3()">What is the duration of this UX UI design course in your institute at
+                                    Chennai?</p>
+                                <p id="panel3">A UI designer designs the interface of a product and is
+                                    responsible for its aesthetics and visual appeal. While
+                                    the UX designer focuses on the overall experience, ...</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="image" class="flip4">
+                                <img src="./newassets/assets/img/21.png" alt="" id="myImage4">
+                            </div>
+                            <div class="question">
+                                <p class="flip4" onclick="changeImage4()">What is the fee charged for this UX UI design course?</p>
+                                <p id="panel4">A UI designer designs the interface of a product and is
+                                    responsible for its aesthetics and visual appeal. While
+                                    the UX designer focuses on the overall experience, ...</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="image" class="flip5">
+                                <img src="./newassets/assets/img/21.png" id="myImage5" alt="">
+                            </div>
+                            <div class="question">
+                                <p class="flip5" onclick="changeImage5()">Will I receive placement support after completing the UX UI design
+                                    course at Web D School?</p>
+                                <p id="panel5">A UI designer designs the interface of a product and is
+                                    responsible for its aesthetics and visual appeal. While
+                                    the UX designer focuses on the overall experience, ...</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="image" class="flip6">
+                                <img src="./newassets/assets/img/21.png" id="myImage6" alt="">
+                            </div>
+                            <div class="question">
+                                <p class="flip6" onclick="changeImage6()">Do I need to be an artist to study designing?</p>
+                                <p id="panel6">A UI designer designs the interface of a product and is
+                                    responsible for its aesthetics and visual appeal. While
+                                    the UX designer focuses on the overall experience, ...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section:22-End -->
+
+        <!-- Section:23[Free to talk]-Start -->
+        <section class="section-23">
+            <div class="bg">
+                <div class="wrapper">
+                    <h2>Feel free to talk with our Experts...</h2>
+                    <div class="box flex">
+                        <div class="flex">
+                            <img src="./newassets/assets/img/Icon ionic-ios-mail.png" alt="">
+                            <p>info@webdschool.com</p>
+                        </div>
+                        <div class="flex">
+                            <img src="./newassets/assets/img/Icon zocial-call.png" alt="">
+                            <p>+91 97913 33350</p>
+                        </div>
+                        <div class="btn">
+                            <a href="#">Enquire Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section:23-End -->
+
+        <!-- Section:24[Videos]-Start -->
+        <section class="section-24">
+            <div class="wrapper">
+                <div class="title">
+                    <h1><span>Related</span> Videos</h1>
+                </div>
+                <div class="bd">
+                    <div class="cards flex homeslider">
+                        <div class="card flex slide" style="margin-left:10px ;">
+                            <iframe width="100%" height="270" src="https://www.youtube.com/embed/ETkGGI-wypQ"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Perferendis officiis explicabo.</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Provident quas aperiam sunt, similique quis aliquid esse
+                                eveniet ullam illo exercitationem odio, nisi labore est,
+                                velit optio repellat.</p>
+                        </div>
+                        <div class="card flex slide" style="margin-left:10px ;">
+                            <iframe width="100%" height="270" src="https://www.youtube.com/embed/Fq2cTkeHAAU"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Perferendis officiis explicabo.</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Provident quas aperiam sunt, similique quis aliquid esse
+                                eveniet ullam illo exercitationem odio, nisi labore est,
+                                velit optio repellat.</p>
+                        </div>
+                        <div class="card flex slide" style="margin-left:10px ;">
+                            <iframe width="100%" height="270" src="https://www.youtube.com/embed/CKQNvUX9IE4"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Perferendis officiis explicabo.</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Provident quas aperiam sunt, similique quis aliquid esse
+                                eveniet ullam illo exercitationem odio, nisi labore est,
+                                velit optio repellat.</p>
+                        </div>
+                        <div class="card flex slide" style="margin-left:10px ;">
+                            <iframe width="100%" height="270" src="https://www.youtube.com/embed/CKQNvUX9IE4"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Perferendis officiis explicabo.</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Provident quas aperiam sunt, similique quis aliquid esse
+                                eveniet ullam illo exercitationem odio, nisi labore est,
+                                velit optio repellat.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section:24-End -->
+
+        <!-- Section:25[Other Courses]-Start -->
+        <section class="section-25">
+            <div class="wrapper">
+                <div class="title">
+                    <h1>Other Courses that might interest you!</h1>
+                </div>
+                <div class="bd">
+                    <div class="cards flex homeslider1">
+                        <div class="card flex slide">
+                            <div class="image">
+                                <img class="imgs" src="./newassets/assets/img/web3.png" alt="">
+                            </div>
+                            <a href="">Development</a>
+                            <div class="para">
+                                <h2>Web Design & Development</h2>
+                                <p>5 Months Duration</p>
+                                <p>90 Hours Live<br>
+                                    Interactive Sessions</p>
+                                <p>60 Sessions Each<br>
+                                    90 Minutes</p>
+                                <p>10 + Tools Covered</p>
+                            </div>
+                            <div class="str">
+                                <img class="stars" src="./newassets/assets/img/star.png" alt="">
+                            </div>
+                        </div>
+                        <div class="card flex slide">
+                            <div class="image">
+                                <img class="imgs" src="./newassets/assets/img/web3.png" alt="">
+                            </div>
+                            <div class="para">
+                                <a href="">Design</a>
+                                <h2>Design Pro Course</h2>
+                                <p>5 Months Duration</p>
+                                <p>90 Hours Live<br>
+                                    Interactive Sessions</p>
+                                <p>60 Sessions Each<br>
+                                    90 Minutes</p>
+                                <p>10 + Tools Covered</p>
+                            </div>
+                            <div class="str">
+                                <img class="stars" src="./newassets/assets/img/star.png" alt="">
+                            </div>
+                        </div>
+                        <div class="card flex slide">
+                            <div class="image">
+                                <img class="imgs" src="./newassets/assets/img/web3.png" alt="">
+                            </div>
+                            <a href="">Design</a>
+                            <div class="para">
+                                <h2>Advance Graphic Designing</h2>
+                                <p>5 Months Duration</p>
+                                <p>90 Hours Live<br>
+                                    Interactive Sessions</p>
+                                <p>60 Sessions Each<br>
+                                    90 Minutes</p>
+                                <p>10 + Tools Covered</p>
+                            </div>
+                            <div class="str">
+                                <img class="stars" src="./newassets/assets/img/star.png" alt="">
+                            </div>
+                        </div>
+                        <div class="card flex slide">
+                            <div class="image">
+                                <img class="imgs" src="./newassets/assets/img/web3.png" alt="">
+                            </div>
+                            <a href="">Marketing</a>
+                            <div class="para">
+                                <h2>Digital Marketing</h2>
+                                <p>5 Months Duration</p>
+                                <p>90 Hours Live<br>
+                                    Interactive Sessions</p>
+                                <p>60 Sessions Each<br>
+                                    90 Minutes</p>
+                                <p>10 + Tools Covered</p>
+                            </div>
+                            <div class="str">
+                                <img class="stars" src="./newassets/assets/img/star.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn">
+                    <a href="#">Discover All</a>
+                </div>
+            </div>
+        </section>
+        <!-- Section:25-End -->
+    </main>
+    <!-- ======= Main-End ======= -->
+
+    <!-- ======= Footer-Start ======= -->
+    <footer>
+        <div class="wrapper">
+            <div class="grid">
+                <div class="box box-1">
+                    <div class="flex">
+                        <div class="logo-1">
+                            <img src="./newassets/assets/img/Icon feather-mail.png" alt="">
+                        </div>
+                        <p>info@webdschool.com</p>
+                    </div>
+                    <div class="flex">
+                        <div class="logo-2">
+                            <img src="./newassets/assets/img/Icon material-call.png" alt="">
+                        </div>
+                        <p>+91 9791333350</p>
+                    </div>
+                    <div class="flex">
+                        <div class="logo-3">
+                            <img src="./newassets/assets/img/Icon metro-location.png" alt="">
+                        </div>
+                        <p>Web D School, No.30, 1st floor, SSR Pankajam Towers, Arunachalam Road, saligramam,
+                            Chennai- 600 093.</p>
+                    </div>
+                </div>
+                <div class="box box-2">
+                    <p>Our institute is within 5 km radius from these following areas Vadapalani, Virugambakkam,
+                        Valasaravakkam, Alwarthirunagar, Saligramam, Ashok Nagar, KK Nagar, Guindy. T Nagar, Mambalam,
+                        Kodambakkam, Nungambakkam, Choolaimedu, Arumbakkam, Anna Nagar, Mogappair, Porur.</p>
+                </div>
+                <div class="box box-3">
+                    <div class="logo">
+                        <img src="./newassets/assets/img/Group 1014.png" alt="">
+                    </div>
+                    <p>Subscribe Us</p>
+                    <form action="#">
+                        <input type="text" placeholder="Your email here...">
+                        <button>Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ======= Footer-End ======= -->
+
+    <!-- ---------- Back-T0-Top ---------- -->
+    <div class="to-top">
+        <a href="#header"><i class="fa-solid fa-arrow-up"></i></a>
+    </div>
+    <script src="./newassets/assets/js/main.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script> -->
+    <script src="slick/slick-1.8.1/slick/slick.min.js"></script>
+    <script>
+        $('.single-item').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            variableWidth: true,
+            adaptiveHeight: true,
+            autoplaySpeed: 2000,
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('.homeslider').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: true,
+                variableWidth: true,
+                adaptiveHeight: true,
+                autoplaySpeed: 1000,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 3,
+                            autoplay: true,
+                            autoplaySpeed: 1000
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 2,
+                            autoplay: true,
+                            autoplaySpeed: 1000
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            autoplay: true,
+                            autoplaySpeed: 1000
+                        }
+                    }
+                    // You can unslick at a given breakpoint now by adding:
+                    // settings: "unslick"
+                    // instead of a settings object
+                ]
+            });
+
+        })
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('.homeslider1').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: true,
+
+                autoplaySpeed: 1000,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 3,
+                            autoplay: true,
+                            autoplaySpeed: 1000
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 2,
+                            autoplay: true,
+                            autoplaySpeed: 1000
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            autoplay: true,
+                            autoplaySpeed: 1000
+                        }
+                    }
+                    // You can unslick at a given breakpoint now by adding:
+                    // settings: "unslick"
+                    // instead of a settings object
+                ]
+            });
+
+        })
+    </script>
+    <script>
+        $('.responsive').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplay: true,
+            variableWidth: true,
+            adaptiveHeight: true,
+            autoplaySpeed: 2000,
+        });
+    </script>
+    <script>
+        $(document).ready(() => {
+            $(".title2").click(function () {
+
+                $(".hide1").hide();
+                $(".hide3").hide();
+                $(".hide2").show();
+                $(".title2").addClass("active");
+                $(".title1").removeClass("active");
+                $(".title3").removeClass("active");
+            })
+        })
+        $(document).ready(() => {
+            $(".title3").click(function () {
+                $(".hide1").hide();
+                $(".hide3").show();
+                $(".hide2").hide();
+                $(".title3").addClass("active");
+                $(".title1").removeClass("active");
+                $(".title2").removeClass("active");
+            })
+        })
+        $(document).ready(() => {
+            $(".title1").click(function () {
+                $(".hide1").show();
+                $(".hide3").hide();
+                $(".hide2").hide();
+                $(".title1").addClass("active");
+                $(".title2").removeClass("active");
+                $(".title3").removeClass("active");
+            })
+        })
+    </script>
+
+
+    <!-- accardion -->
+
+    <script src="./newassets/assets/js/boxes.js" defer></script>
+
+    <!-- faq and accardion script file -->
+    <script src="./newassets/assets/js/faqandaccordion.js" defer></script>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {});
+    </script>
+                <script>
+                    let button = document.querySelectorAll(".section-13 .wrapper .arrow img");
+                    let boxesD = document.querySelectorAll(".desktop .mySlidesss");
+                    let boxesM = document.querySelectorAll(".mobile .mySlidesss");
+                    let num = 0
+            
+                    button[0]?.addEventListener("click",sub);
+                    button[1]?.addEventListener("click",add);
+            
+                    function add(){
+                        slidesFun(num+=1);
+                    }
+            
+                    function sub(){
+                        slidesFun(num-=1);
+                    }
+            
+                    function slidesFun(count){
+                        if(count === boxesD?.length){
+                            num = 0;
+                        }
+                        if(count < 0){
+                            num = boxesD?.length-1;
+                        }
+                        if(count === boxesM?.length){
+                            num = 0;
+                        }
+                        if(count < 0){
+                            num = boxesM?.length-1;
+                        }
+            
+                        boxesD.forEach(i =>{
+                            i.style.transform = `translateX(-${num}00%)`;
+                        });
+                        boxesM.forEach(i =>{
+                            i.style.transform = `translateX(-${num}00%)`;
+                        });
+            
+                        // num++;
+                        console.log("hoi");
+                        console.log(num);
+                    }
+                </script>
+
+<script> 
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        dots:false,
+        nav:true,
+        autoplay:true,
+        autoplayTimeout:2000,
+        autoplayHoverPause:true,
+        navText:['<i class="fa-solid fa-angle-left"></i>','<i class="fa-solid fa-angle-right"></i>'],
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:1
+            }
+        }
+    })
+</script>
+<script>
+    let slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" activess", "");
+      }
+      slides[slideIndex-1].style.display = "flex";  
+      dots[slideIndex-1].className += " activess";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+    </script>
+</body>
+</html>

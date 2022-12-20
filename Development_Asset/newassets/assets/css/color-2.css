@@ -1,0 +1,1107 @@
+.edugate-tabs {
+    margin-bottom: 40px;
+    border: none;
+    display: inline-block
+}
+
+.edugate-tabs li {
+    padding: 0 15px
+}
+
+.edugate-tabs li .text {
+    padding: 0 0 10px 0;
+    line-height: 1;
+    border: none;
+    color: #49575f;
+    text-transform: capitalize;
+    position: relative;
+    cursor: pointer
+}
+
+.edugate-tabs li .text:after {
+    position: absolute;
+    content: '';
+    width: 0px;
+    height: 2px;
+    background-color: #86bc42;
+    bottom: -2px;
+    left: 0;
+    transition: all 0.3s ease
+}
+
+.edugate-tabs li .text:hover {
+    background-color: transparent;
+    border: none
+}
+
+.edugate-tabs li .text:hover:after {
+    width: 100%
+}
+
+.edugate-tabs li.active .text {
+    border: none;
+    line-height: 1;
+    color: #86bc42
+}
+
+.edugate-tabs li.active .text:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: #86bc42;
+    bottom: -2px;
+    left: 0;
+    transition: all 0.3s ease
+}
+
+.edugate-tabs li.active .text:focus,
+.edugate-tabs li.active .text:hover {
+    border: none;
+    color: #86bc42
+}
+
+
+.list-expand-title {
+    margin-top: 30px;
+
+}
+
+.edugate-widget p {
+    margin-bottom: 20px
+}
+
+.edugate-widget .info-list ul {
+    margin-bottom: 0px
+}
+
+.edugate-widget .info-list ul li {
+    display: table;
+    border-top: 1px solid #2F374C;
+    width: 100%;
+    padding-bottom: 15px;
+    padding-top: 15px
+}
+
+.edugate-widget .info-list ul li>i {
+    display: table-cell;
+    width: 25px
+}
+
+.edugate-widget .info-list ul li>a {
+    display: table-cell
+}
+
+.edugate-widget .info-list p {
+    margin-bottom: 0px
+}
+
+.underline {
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 5.5%;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.img-responsive {
+    width: 100%;
+    height: auto;
+    display: block;
+    overflow: hidden;
+}
+
+.underline::after {
+    width: 50px;
+    height: 5px;
+    background-color: #86bc42;
+    content: "";
+    position: absolute;
+    right: 54.5%;
+    display: block
+}
+
+.edugate-content {
+    display: table-cell;
+    vertical-align: top;
+    text-align: left
+}
+
+.edugate-content .title {
+    font-weight: 700;
+    margin: 0;
+    color: #49575f;
+    display: inline-block
+}
+
+.edugate-content .title:hover {
+    color: #86bc42
+}
+
+.edugate-content .star-rating {
+    margin-bottom: 20px
+}
+
+.edugate-content .description {
+    color: #6f8190;
+    display: inline-block;
+    width: 100%;
+    line-height: 24px
+}
+
+.edugate-layout-1 {
+    position: relative;
+    width: 100%;
+    display: table;
+    background-color: #fafafa;
+    margin-top: 90px;
+    transition: all 0.3s linear
+}
+
+.edugate-layout-1 .edugate-image {
+    width: 48%;
+    height: 400px;
+    position: relative;
+    top: -30px;
+    padding-left: 30px;
+    display: table-cell
+}
+
+.edugate-layout-1 .edugate-image img {
+    height: 100%;
+    width: 100%
+}
+
+.edugate-layout-1 .edugate-content {
+    width: 55%;
+    padding: 50px 30px 30px 30px
+}
+
+.edugate-layout-1 .edugate-content .title {
+    font-size: 30px;
+    margin: 0 0 6px 0;
+    max-height: 84px;
+    overflow: hidden;
+    text-transform: capitalize
+}
+
+.edugate-layout-1 .edugate-content .title:hover {
+    color: #86bc42
+}
+
+.edugate-layout-1 .edugate-content .info {
+    margin-bottom: 5px
+}
+
+.edugate-layout-1 .edugate-content .info-more {
+    margin-bottom: 25px
+}
+
+.edugate-layout-1 .edugate-content .btn {
+    position: absolute;
+    right: 30px;
+    bottom: 30px
+}
+
+.edugate-layout-1 .edugate-content .description {
+    height: 96px;
+    overflow: hidden
+}
+
+.edugate-layout-1:hover {
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15)
+}
+
+.edugate-layout-1:hover .edugate-content .title {
+    color: #242c42
+}
+
+.edugate-layout-1:hover .edugate-content .title:hover {
+    color: #86bc42
+}
+
+.edugate-layout-2 {
+    position: relative;
+    width: 100%;
+    transition: all 0.3s linear;
+    padding: 0px 24px;
+}
+
+.edugate-layout-2 .edugate-layout-2-wrapper {
+    padding: 30px 0 30px 30px;
+    display: table;
+    width: 100%
+}
+
+.edugate-layout-2 .edugate-content {
+    padding-right: 30px;
+    position: relative
+}
+
+.edugate-layout-2 .edugate-content .title {
+    font-size: 18px;
+    text-transform: capitalize;
+    margin-bottom: 5px
+}
+
+.edugate-layout-2 .edugate-content .title:hover {
+    color: #86bc42
+}
+
+.edugate-layout-2 .edugate-content .info {
+    margin-bottom: 5px
+}
+
+.edugate-layout-2 .edugate-content .info-more {
+    margin-bottom: 8px
+}
+
+.edugate-layout-2 .edugate-content .description {
+    height: 96px;
+    overflow: hidden
+}
+
+.edugate-layout-2 .edugate-content .btn {
+    position: absolute;
+    left: 50%;
+    margin-left: -65px;
+    bottom: -50px
+}
+
+.edugate-layout-2 .edugate-image {
+    width: 300px;
+    height: 225px;
+    display: table-cell;
+    position: relative;
+    z-index: 1
+}
+
+.edugate-layout-2 .edugate-image img {
+    width: 100%;
+    height: 100%
+}
+
+.edugate-layout-2:before {
+    position: absolute;
+    content: '';
+    width: 75%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #fafafa;
+    border-left: 5px solid #eaedf5;
+    transition: all 0.3s linear
+}
+
+.edugate-layout-2:after {
+    position: absolute;
+    z-index: 2;
+    content: '';
+    width: 5px;
+    top: 0;
+    left: 0;
+    height: 0;
+    background-color: #242c42;
+    transition: all 0.5s ease
+}
+
+.edugate-layout-2:hover:before {
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15)
+}
+
+.edugate-layout-2:hover:after {
+    height: 100%
+}
+
+.edugate-layout-2:hover .edugate-content .title {
+    color: #242c42
+}
+
+.edugate-layout-2:hover .edugate-content .title:hover {
+    color: #86bc42
+}
+
+.edugate-layout-3 {
+    width: 100%;
+    min-height: 480px;
+    background-color: #fafafa;
+    margin-top: 0;
+    margin-bottom: 90px;
+    border-bottom: 5px solid #eaedf5;
+    position: relative;
+    transition: all 0.3s linear
+}
+
+.edugate-layout-3 .edugate-layout-3-wrapper {
+    position: relative;
+    padding: 0 30px 20px 30px;
+    top: -30px
+}
+
+.edugate-layout-3 .edugate-content {
+    padding-top: 25px
+}
+
+.edugate-layout-3 .edugate-content .title {
+    font-size: 20px;
+    margin: 0 0 10px 0;
+    text-transform: uppercase;
+    max-height: 56px;
+    /* overflow: hidden */
+}
+
+.edugate-layout-3 .edugate-content .title:hover {
+    color: #86bc42
+}
+
+.edugate-layout-3 .edugate-content .info {
+    margin-bottom: 5px
+}
+
+.edugate-layout-3 .edugate-content .info-more {
+    margin-bottom: 25px
+}
+
+.edugate-layout-3 .edugate-content .description {
+    line-height: 24px;
+    margin-bottom: 18px;
+    max-height: 72px;
+    overflow: hidden
+}
+
+.edugate-layout-3 .edugate-content .total-courses i,
+.edugate-layout-3 .edugate-content .total-courses a {
+    display: inline-block;
+    color: #49575f;
+    text-transform: capitalize
+}
+
+.edugate-layout-3 .edugate-content .total-courses i {
+    margin-right: 10px
+}
+
+.edugate-layout-3 .edugate-content .total-courses a:hover {
+    color: #86bc42
+}
+
+.edugate-layout-3 .edugate-content .btn {
+    margin: 0 auto;
+    margin-top: 40px;
+    display: block
+}
+
+.edugate-layout-3:after {
+    position: absolute;
+    z-index: 2;
+    content: '';
+    height: 5px;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    background-color: #242c42;
+    transition: all 0.5s ease
+}
+
+.edugate-layout-3:hover {
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15)
+}
+
+.edugate-layout-3:hover .edugate-content .title {
+    color: #242c42
+}
+
+.edugate-layout-3:hover .edugate-content .title:hover {
+    color: #86bc42
+}
+
+.edugate-layout-3:hover:after {
+    width: 100%
+}
+
+.edugate-layout-3.news-gird {
+    margin-top: 0;
+    margin-bottom: 90px
+}
+
+.edugate-layout-3.news-gird .edugate-content .title {
+    text-transform: capitalize;
+    margin-bottom: 5px
+}
+
+.edugate-layout-3.news-gird .edugate-content .btn {
+    margin-top: 0
+}
+
+.news-masonry .edugate-layout-3 .edugate-content .description {
+    max-height: 100%;
+    overflow: initial
+}
+
+.edugate-video {
+    width: 100%
+}
+
+.edugate-audio {
+    width: 100%;
+    height: 70px;
+    padding: 20px 0;
+    background-color: rgba(0, 0, 0, 0.92)
+}
+
+.edugate-audio-player {
+    width: 100%;
+    height: 70px;
+    padding: 20px 0;
+    background-color: rgba(0, 0, 0, 0.92)
+}
+
+.edugate-video-player {
+    width: 100%;
+    height: 217px;
+    position: relative
+}
+
+@media screen and (max-width: 1200px) {
+    .info-list {
+        margin-left: 40px;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+
+
+    .edugate-layout-1 .edugate-image {
+        height: 335px
+    }
+
+    .edugate-layout-1 .edugate-content {
+        padding-top: 30px
+    }
+
+
+
+    .edugate-layout-3 {
+        min-height: 470px
+    }
+
+    .edugate-layout-3 .edugate-content .description {
+        max-height: 100px
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .edugate-layout-1 .edugate-image {
+        height: auto;
+        top: 30px
+    }
+
+    .edugate-layout-1 .edugate-image img {
+        height: auto
+    }
+
+    .edugate-layout-1 .edugate-content {
+        padding: 30px
+    }
+
+    .edugate-layout-1 .edugate-content .title {
+        font-size: 24px;
+        max-height: 68px
+    }
+
+    .edugate-layout-1 .edugate-content .description {
+        height: 72px
+    }
+
+    .edugate-layout-1 .edugate-content .btn {
+        position: relative;
+        top: auto;
+        right: auto;
+        bottom: auto;
+        float: right;
+        margin-top: 10px
+    }
+
+    .edugate-layout-3 {
+        min-height: 480px
+    }
+
+
+}
+
+@media screen and (max-width: 768px) {
+
+
+    .edugate-layout-1 {
+        margin-top: 0;
+        margin-bottom: 70px
+    }
+
+    .edugate-layout-2:before {
+        width: 80%
+    }
+
+
+    .edugate-video-player {
+        width: 310px
+    }
+
+    .edugate-audio-player {
+        width: 310px
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .edugate-tabs {
+        margin-bottom: 20px
+    }
+
+    .edugate-tabs li {
+        height: 60px
+    }
+
+
+    .edugate-layout-3 .edugate-content .btn {
+        position: relative;
+        bottom: auto;
+        right: auto;
+        margin-top: 20px;
+        margin-right: 0
+    }
+
+    .underline {
+        margin-bottom: 35px;
+        text-align: inherit;
+    }
+
+
+
+}
+
+
+
+@media screen and (max-width: 480px) {
+
+    .edugate-layout-2:before {
+        width: 100%
+    }
+
+    .edugate-layout-2 .edugate-layout-2-wrapper {
+        padding: 30px
+    }
+
+    .edugate-layout-2 .edugate-layout-2-wrapper .edugate-content {
+        display: block;
+        padding: 0;
+        width: 100%;
+        margin-bottom: 30px
+    }
+
+    .edugate-layout-2 .edugate-layout-2-wrapper .edugate-content .title {
+        font-size: 24px
+    }
+
+    .edugate-layout-2 .edugate-layout-2-wrapper .edugate-image {
+        width: 100%;
+        height: auto;
+        display: block
+    }
+
+    .edugate-layout-2 .edugate-content .btn {
+        position: relative !important;
+        bottom: auto !important;
+    }
+
+    .edugate-layout-1 .edugate-content {
+        width: 100%;
+        display: block;
+        padding: 0 30px
+    }
+
+    .edugate-layout-1 .edugate-content button {
+        margin-bottom: 30px;
+        margin-top: 10px
+    }
+
+
+    .edugate-layout-3 .edugate-layout-3-wrapper .edugate-image {
+        display: block;
+        width: 100%;
+        margin-bottom: 30px
+    }
+
+    .edugate-layout-3 .edugate-layout-3-wrapper .edugate-content {
+        display: block;
+        vertical-align: top;
+        padding: 0;
+        width: 100%
+    }
+
+    .edugate-layout-3 .btn {
+        position: absolute;
+        bottom: 30px;
+        right: 30px
+    }
+
+    .underline {
+        margin-bottom: 25px
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 320px) {
+
+    .edugate-layout-1 .edugate-content {
+        padding: 0 20px
+    }
+
+    .edugate-layout-1 .edugate-content button {
+        margin-bottom: 20px
+    }
+
+    .edugate-layout-3 .edugate-layout-3-wrapper {
+        padding: 20px
+    }
+
+    .edugate-layout-3 .edugate-layout-3-wrapper .edugate-image {
+        margin-bottom: 20px
+    }
+
+    .edugate-layout-3 .edugate-layout-3-wrapper .edugate-image .news-gird-slider {
+        width: 215px
+    }
+}
+
+.edugate-content {
+    display: table-cell;
+    vertical-align: top;
+    text-align: left
+}
+
+.edugate-content ul {
+    list-style-type: none;
+}
+
+.edugate-content ul li {
+    font-size: 15px;
+    color: black;
+    margin-top: 15px;
+    font-weight: bolder;
+}
+
+.edugate-layout-1 {
+    position: relative;
+    width: 100%;
+    display: table;
+    background-color: #fafafa;
+    margin-top: 90px;
+    transition: all 0.3s linear
+}
+
+.edugate-layout-1 .edugate-image {
+    width: 48%;
+    height: 400px;
+    position: relative;
+    top: -30px;
+    padding-left: 30px;
+    display: table-cell
+}
+
+.edugate-layout-1 .edugate-image img {
+    height: 100%;
+    width: 100%
+}
+
+.edugate-layout-1 .edugate-content {
+    width: 55%;
+    padding: 50px 30px 30px 30px
+}
+
+.edugate-layout-1 .edugate-content .title {
+    font-size: 30px;
+    margin: 0 0 6px 0;
+    max-height: 84px;
+    overflow: hidden;
+    text-transform: capitalize
+}
+
+.edugate-layout-1 .edugate-content .title:hover {
+    color: #86bc42
+}
+
+.edugate-layout-1 .edugate-content .info {
+    margin-bottom: 5px
+}
+
+.edugate-layout-1 .edugate-content .info-more {
+    margin-bottom: 25px
+}
+
+.edugate-layout-1 .edugate-content .btn {
+    position: absolute;
+    right: 30px;
+    bottom: 30px
+}
+
+.edugate-layout-1 .edugate-content .description {
+    height: 96px;
+    overflow: hidden
+}
+
+.edugate-layout-1:hover {
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15)
+}
+
+.edugate-layout-1:hover .edugate-content .title {
+    color: #242c42
+}
+
+.edugate-layout-1:hover .edugate-content .title:hover {
+    color: #86bc42
+}
+
+.edugate-layout-2 {
+    position: relative;
+    top: 0px;
+    width: 100%;
+    transition: all 0.3s linear
+}
+
+.edugate-layout-2 .edugate-layout-2-wrapper {
+    padding: 30px 0 30px 30px;
+    display: table;
+    width: 100%
+}
+
+.edugate-layout-2 .edugate-content {
+    padding-right: 30px;
+    position: relative
+}
+
+.edugate-layout-2 .edugate-content .title {
+    font-size: 18px;
+    text-transform: capitalize;
+    margin-bottom: 5px
+}
+
+.edugate-layout-2 .edugate-content .title:hover {
+    color: #86bc42
+}
+
+.edugate-layout-2 .edugate-content .info {
+    margin-bottom: 5px
+}
+
+.edugate-layout-2 .edugate-content .info-more {
+    margin-bottom: 8px
+}
+
+.edugate-layout-2 .edugate-content .description {
+    height: 96px;
+    overflow: hidden
+}
+
+.edugate-layout-2 .edugate-content .btn {
+    position: absolute;
+    left: 50%;
+    margin-left: -65px;
+    bottom: -50px
+}
+
+.edugate-layout-2 .edugate-image {
+    width: 300px;
+    height: 225px;
+    display: table-cell;
+    position: relative;
+    z-index: 1
+}
+
+.edugate-layout-2 .edugate-image img {
+    width: 100%;
+    height: 100%
+}
+
+.edugate-layout-2:before {
+    position: absolute;
+    content: '';
+    width: 75%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #fafafa;
+    border-left: 5px solid #eaedf5;
+    transition: all 0.3s linear
+}
+
+.edugate-layout-2:after {
+    position: absolute;
+    z-index: 2;
+    content: '';
+    width: 5px;
+    top: 0;
+    left: 0;
+    height: 0;
+    background-color: #242c42;
+    transition: all 0.5s ease
+}
+
+.edugate-layout-2:hover:before {
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15)
+}
+
+.edugate-layout-2:hover:after {
+    height: 100%
+}
+
+.edugate-layout-2:hover .edugate-content .title {
+    color: #242c42
+}
+
+.edugate-layout-2:hover .edugate-content .title:hover {
+    color: #86bc42
+}
+
+.edugate-layout-3 {
+    width: 72%;
+    height: 555px;
+    border-radius: 5px;
+    background-color: #fafafa;
+    margin: auto;
+    margin-bottom: 90px;
+    border-bottom: 5px solid #eaedf5;
+    position: relative;
+    transition: all 0.3s linear;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.edugate-layout-3 .edugate-layout-3-wrapper {
+    position: relative;
+    padding: 0 30px 20px 30px;
+    top: -30px
+}
+
+.edugate-layout-3 .edugate-content {
+    padding-top: 25px
+}
+
+.edugate-layout-3 .edugate-content .title {
+    font-size: 19px;
+    margin: 0 0 10px 0;
+    text-transform: uppercase;
+    max-height: 56px;
+    /* overflow: hidden */
+}
+
+.edugate-layout-3 .edugate-content .title:hover {
+    color: #86bc42
+}
+
+.edugate-layout-3 .edugate-content .info {
+    margin-bottom: 5px
+}
+
+.edugate-layout-3 .edugate-content .info-more {
+    margin-bottom: 25px
+}
+
+.edugate-layout-3 .edugate-content .description {
+    line-height: 24px;
+    margin-bottom: 18px;
+    max-height: 72px;
+    overflow: hidden
+}
+
+.edugate-layout-3 .edugate-content .total-courses i,
+.edugate-layout-3 .edugate-content .total-courses a {
+    display: inline-block;
+    color: #49575f;
+    text-transform: capitalize
+}
+
+.edugate-layout-3 .edugate-content .total-courses i {
+    margin-right: 10px
+}
+
+.edugate-layout-3 .edugate-content .total-courses a:hover {
+    color: #86bc42
+}
+
+.edugate-layout-3 .edugate-content .btn {
+    margin: 0 auto;
+    margin-top: 40px;
+    display: block
+}
+
+.edugate-layout-3:after {
+    position: absolute;
+    z-index: 2;
+    content: '';
+    height: 5px;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    background-color: #1E90FF;
+    transition: all 0.5s ease
+}
+
+.edugate-layout-3:hover {
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15)
+}
+
+.edugate-layout-3:hover .edugate-content .title {
+    color: #242c42
+}
+
+.edugate-layout-3:hover .edugate-content .title:hover {
+    color: #86bc42
+}
+
+.edugate-layout-3:hover:after {
+    width: 100%
+}
+
+.edugate-layout-3.news-gird {
+    margin-top: 0;
+    margin-bottom: 90px
+}
+
+.edugate-layout-3.news-gird .edugate-content .title {
+    text-transform: capitalize;
+    margin-bottom: 5px
+}
+
+.edugate-layout-3.news-gird .edugate-content .btn {
+    margin-top: 0
+}
+
+.course-title b {
+    font-size: 19px;
+    font-family: 'Roboto', sans-serif;;
+
+}
+
+.course-titles b {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;;
+    color: black;
+}
+
+.course-titles p {
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;;
+}
+
+.course-title {
+    margin-top: 0;
+    font-family: 'Roboto', sans-serif;;
+
+}
+
+.browse-course ul {
+    list-style-type: none;
+
+
+}
+
+.browse-course ul li a {
+    color: black;
+    font-size: 15px;
+    line-height: 40px;
+    font-family: 'Roboto', sans-serif;;
+
+
+}
+
+
+.browse-course-1 ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Roboto', sans-serif;;
+
+}
+
+.browse-course ul li a:hover {
+    color: #86bc42;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;;
+
+}
+
+
+.main-course {
+    display: flex;
+}
+
+.section-34 .underline::after {
+    width: 50px;
+    height: 5px;
+    background-color: #86bc42;
+    font-family: 'Roboto', sans-serif;;
+    content: "";
+    position: absolute;
+    right: 53.5%;
+    display: block;
+}
+.section-34 p{
+    color: #ED8722;
+}
+.online {
+    width: 25%;
+}
+
+@media screen and (max-width:720px) {
+    .top-content {
+        margin-bottom: 15%;
+    }
+
+    .main-course {
+        display: block;
+    }
+    .online {
+        width: 100%;
+        margin-bottom: 10%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .course-title {
+        font-size: 28px
+    }
+    .online {
+        width: 100%;
+        margin-bottom: 10%;
+    }
+}
+
+@media screen and (max-width: 380px) {
+
+    .course-title {
+        font-size: 24px
+    }
+}
+@media screen and (min-width: 2580px) {
+
+    .section-34 .underline::after {
+        width: 50px;
+        height: 5px;
+        background-color: #86bc42;
+        font-family: 'Roboto', sans-serif;
+        content: "";
+        position: absolute;
+        right: 52.5%;
+        display: block;
+    }
+}
